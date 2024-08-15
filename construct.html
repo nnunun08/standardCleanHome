@@ -1,0 +1,1751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>철거의기준</title>
+    <link rel="icon" href="./img/favicon.png" type="image/x-icon"> 
+    <!-- flatpickr calendar -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" type="text/css" href="https://npmcdn.com/flatpickr/dist/themes/dark.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/ko.js"></script>
+    <script src="./js/mode.js" defer></script>
+
+    <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.min.css"  integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body class="light">
+
+    <section class="page-wrap">
+        <div class="gnb">
+
+            <div class="dropdown">
+                <div class="logo">
+                    <svg width="25" height="37" viewBox="0 0 25 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.4182 13.374C11.3338 13.4588 11.193 13.4588 11.1085 13.374C11.0897 13.3551 11.0757 13.3316 11.0663 13.3127L9.43308 14.9523C9.25005 15.136 8.95438 15.136 8.76666 14.9523L7.14755 13.3269C6.96452 13.1431 6.96452 12.8463 7.14755 12.6578L8.78543 11.0135C8.75258 11.0041 8.72442 10.9853 8.70096 10.9617C8.61648 10.8769 8.61648 10.7356 8.70096 10.6508L9.10456 10.2456L8.75727 9.89694L10.0385 8.61072L10.3858 8.95936L10.7894 8.55418C10.8738 8.46938 11.0146 8.46938 11.0991 8.55418C11.1226 8.57774 11.1414 8.61072 11.1507 8.63899L12.7886 6.9947C12.9717 6.81095 13.2673 6.81095 13.455 6.9947L15.0742 8.62014C15.2572 8.80389 15.2572 9.10071 15.0742 9.28916L13.441 10.9287C13.441 10.9287 13.4832 10.9523 13.502 10.9711C13.5864 11.0559 13.5864 11.1973 13.502 11.2821L13.0984 11.6873L19.3214 17.9346L25 12.2338L13.9103 1.08657C13.1312 0.304476 11.8688 0.304476 11.0897 1.08657L0.708654 11.513L13.1828 24.0359L13.5864 23.6307C13.6709 23.5459 13.8117 23.5459 13.8962 23.6307C13.915 23.6496 13.929 23.6731 13.9384 23.692L15.5716 22.0524C15.7546 21.8687 16.0503 21.8687 16.238 22.0524L17.8571 23.6779C18.0402 23.8616 18.0402 24.1584 17.8571 24.3469L16.2193 25.9912C16.2521 26.0006 16.2803 26.0194 16.3037 26.043C16.3882 26.1278 16.3882 26.2691 16.3037 26.3539L15.9001 26.7591L16.2474 27.1078L14.9662 28.394L14.6189 28.0453L14.2153 28.4505C14.1308 28.5353 13.9901 28.5353 13.9056 28.4505C13.8821 28.427 13.8633 28.394 13.854 28.3657L12.2161 30.01C12.033 30.1938 11.7374 30.1938 11.5497 30.01L9.93054 28.3846C9.74751 28.2008 9.74751 27.904 9.93054 27.7155L11.5637 26.076C11.5637 26.076 11.5215 26.0524 11.5027 26.0336C11.4182 25.9488 11.4182 25.8074 11.5027 25.7226L11.9063 25.3174L5.68331 19.0701L0 24.7756L11.0944 35.9134C11.8735 36.6955 13.1359 36.6955 13.915 35.9134L24.3007 25.487L11.8265 12.9641L11.4229 13.3693L11.4182 13.374Z" fill="#181B20"/>
+                    </svg>
+
+                </div>
+                <div class="company">
+                    <div class="label">소속회사</div>
+                    <button class="select" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        업스탠다드
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">업스탠다드</a></li>
+                      <li><a class="dropdown-item" href="#">업스탠다드2</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="menu">
+                <a href="#" class="listItem dashboard"><div class="icon"></div><div class="name">대시보드</div></a>
+                <a href="#" class="listItem schedule"><div class="icon"></div><div class="name">스케쥴</div></a>
+                <a href="#" class="listItem community"><div class="icon"></div><div class="name">커뮤니티</div></a>
+                <a href="#" class="listItem construction active"><div class="icon"></div><div class="name">현장내역</div></a>
+                <a href="#" class="listItem invoice"><div class="icon"></div><div class="name">청구내역</div></a>
+                <a href="#" class="listItem payment"><div class="icon"></div><div class="name">결제내역</div></a>
+                <a href="#" class="listItem employee"><div class="icon"></div><div class="name">직원 및 급여</div></a>
+                <a href="#" class="listItem customer"><div class="icon"></div><div class="name">일반/사업자 고객</div></a>
+                <a href="#" class="listItem pricing"><div class="icon"></div><div class="name">전자계약 및 세무</div></a>
+                <a href="#" class="listItem documents"><div class="icon"></div><div class="name">비용 및 단가</div></a>
+                <a href="#" class="listItem setting"><div class="icon"></div><div class="name">설정</div></a>
+                <a href="#" class="listItem info"><div class="icon"></div><div class="name">정보</div></a>
+            </div>
+
+            <div class="myState">
+                <button class="modeBtn"></button>
+                <div class="text">
+                    <div class="name">최태환</div>
+                    <div class="state">관리자 모드</div>
+                </div>
+                <div class="more dropup-center dropup" >
+                    <button class="moreBtn" data-bs-toggle="dropdown" aria-expanded="false">...</button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">계정 정보</a></li>
+                      <li><a class="dropdown-item" href="#">로그아웃</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="conLayout">
+            <div class="contents">
+                <div class="">
+                    <h2 class="pageName">
+                        현장내역
+                        
+                        <div class="btnWrap">
+                            <div class="btn-secondary">엑셀 다운</div>
+                            <div class="btn-secondary">엑셀 업로드</div>
+                            <div data-bs-toggle="modal" data-bs-target="#sample" class="btn-black">sample</div>
+                            <div data-bs-toggle="modal" data-bs-target="#teamLeader" class="btn-black">현장팀장 등록</div>
+                            <div data-bs-toggle="modal" data-bs-target="#siteDetail" class="btn-black">현장상세 등록</div>
+                            <div data-bs-toggle="modal" data-bs-target="#siteFull" class="btn-black">현장 등록</div>
+                        </div>
+                    </h2>
+                    <div class="inner">
+                        <div class="tab2">
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="notice-tab" data-bs-toggle="tab" data-bs-target="#notice-tab-pane" type="button" role="tab" aria-controls="notice-tab-pane" aria-selected="true">주거현장 (직영팀)</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="event-tab" data-bs-toggle="tab" data-bs-target="#event-tab-pane" type="button" role="tab" aria-controls="event-tab-pane" aria-selected="false">상가현장 (본사팀)</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="example-tab" data-bs-toggle="tab" data-bs-target="#example-tab-pane" type="button" role="tab" aria-controls="example-tab-pane" aria-selected="false">견적비딩 (협력업체)</button>
+                                </li>
+                            </ul>
+                            
+                            <div class="tab-content" id="myTabContent" style="margin-top: 36px;">
+                                <!-- 공지사항 -->
+                                <div class="tab-pane fade show active" id="notice-tab-pane" role="tabpanel" aria-labelledby="notice-tab" tabindex="0">
+                
+                                    <!-- 검색모듈 -->
+                                    <div class="searchModule">
+                                        <div class="item" style="width: 230px;">
+                                            <div class="label">철거시작일</div>
+                                            <!-- flatpickr -->
+                                            <input type="text" class="calendar" id="datepicker" placeholder="2023.02 ~ 현재">
+                                        </div>
+                                        <div class="item">
+                                            <div class="label">협력업체</div>
+                                            <div class="dropdown">
+                                                <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">전체</button>
+                                                <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">option</a></li>
+                                                <li><a class="dropdown-item" href="#">option</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="label">현장타입</div>
+                                            <div class="dropdown">
+                                                <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">전체</button>
+                                                <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">option</a></li>
+                                                <li><a class="dropdown-item" href="#">option</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="label">일반 사업자 고객</div>
+                                            <div class="dropdown">
+                                                <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">전체</button>
+                                                <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">option</a></li>
+                                                <li><a class="dropdown-item" href="#">option</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="label">철거 현황</div>
+                                            <div class="dropdown">
+                                                <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">전체</button>
+                                                <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">option</a></li>
+                                                <li><a class="dropdown-item" href="#">option</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="label">상태</div>
+                                            <div class="dropdown">
+                                                <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">전체</button>
+                                                <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">option</a></li>
+                                                <li><a class="dropdown-item" href="#">option</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="item widthVariable">
+                                            <div class="label">검색어 입력</div>
+                                            <input class="input" placeholder="검색어 입력" />
+                                        </div>
+
+                                        <button class="btn-border">적용</button>
+                                    </div>
+
+                                    <!-- 그리드모듈 -->
+                                    <div class="gridModule">
+                                        <div class="gridResult">조회결과 : 0건</div>
+                                        <div class="grid">
+                                            <table style="min-width: 560px;">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="wid_150">예약상태</th>
+                                                        <th class="wid_100">철거예정일</th>
+                                                        <th class="wid_400">주소</th>
+                                                        <th class="wid_200">담당자</th>
+                                                        <th class="wid_200">마루철거일</th>
+                                                        <th class="wid_200">팀장</th>
+                                                        <th class="wid_50">실행</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="stepUI">
+                                                                <div class="stepWrap">
+                                                                    <span class="step-light on"></span>
+                                                                    <span class="step-light"></span>
+                                                                    <span class="step-light"></span>
+                                                                    <span class="step-light"></span>
+                                                                    <span class="step-light"></span>
+                                                                    <span class="step-light"></span>
+                                                                </div>
+                                                                <select class="select" name="" id="">
+                                                                    <option value="">예약대기</option>
+                                                                    <option value="">예약확정</option>
+                                                                    <option value="">팀장배정</option>
+                                                                    <option value="">철거중</option>
+                                                                    <option value="">결제대기</option>
+                                                                    <option value="">결제완료</option>
+                                                                </select>
+                                                            </div>
+                                                        </td>
+                                                        <td>2023.11.09 (목)</td>
+                                                        <td>서울시 강남구 청담동 134-38 청담자이 102-1302</td>
+                                                        <td>방배대리점 / 홍천기 차장</td>
+                                                        <td>2023.11.09 (목) 09:00</td>
+                                                        <td>
+                                                            <div class="block">
+                                                                <span class="badge-sm">직영</span>
+                                                                <span class="badge-sm-value">정철욱</span>
+                                                            </div>
+                                                            <div class="block">
+                                                                <span class="badge-sm">설비</span>
+                                                                <span class="badge-sm-value">이태욱</span>
+                                                            </div>
+                                                            <div class="block">
+                                                                <span class="badge-sm">마루</span>
+                                                                <span class="badge-sm-value">박영헌</span>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="dropup-center dropstart" >
+                                                                <button class="moreBtn" data-bs-toggle="dropdown" aria-expanded="false">...</button>
+                                                                <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item" href="#">상세정보</a></li>
+                                                                <li><a class="dropdown-item" href="#">팀장수정</a></li>
+                                                                <li><a class="dropdown-item red" href="#">강제 취소</a></li>
+                                                                <li><a class="dropdown-item red" href="#">당일 펑크</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="stepUI">
+                                                                <div class="stepWrap">
+                                                                    <span class="step-light on"></span>
+                                                                    <span class="step-light on"></span>
+                                                                    <span class="step-light"></span>
+                                                                    <span class="step-light"></span>
+                                                                    <span class="step-light"></span>
+                                                                    <span class="step-light"></span>
+                                                                </div>
+                                                                <select class="select" name="" id="">
+                                                                    <option value="">예약대기</option>
+                                                                    <option value="">예약확정</option>
+                                                                    <option value="">팀장배정</option>
+                                                                    <option value="">철거중</option>
+                                                                    <option value="">결제대기</option>
+                                                                    <option value="">결제완료</option>
+                                                                </select>
+                                                            </div>
+                                                        </td>
+                                                        <td>2023.11.09 (목)</td>
+                                                        <td>서울시 강남구 청담동 134-38 청담자이 102-1302</td>
+                                                        <td>방배대리점 / 홍천기 차장</td>
+                                                        <td>2023.11.09 (목) 09:00</td>
+                                                        <td>
+                                                            <div class="block">
+                                                                <span class="badge-sm">직영</span>
+                                                                <span class="badge-sm-value">정철욱</span>
+                                                            </div>
+                                                            <div class="block">
+                                                                <span class="badge-sm">설비</span>
+                                                                <span class="badge-sm-value">이태욱</span>
+                                                            </div>
+                                                            <div class="block">
+                                                                <span class="badge-sm">마루</span>
+                                                                <span class="badge-sm-value">박영헌</span>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="dropup-center dropstart" >
+                                                                <button class="moreBtn" data-bs-toggle="dropdown" aria-expanded="false">...</button>
+                                                                <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item" href="#">상세정보</a></li>
+                                                                <li><a class="dropdown-item" href="#">팀장수정</a></li>
+                                                                <li><a class="dropdown-item red" href="#">강제 취소</a></li>
+                                                                <li><a class="dropdown-item red" href="#">당일 펑크</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="stepUI">
+                                                                <div class="stepWrap">
+                                                                    <span class="step-light on"></span>
+                                                                    <span class="step-light on"></span>
+                                                                    <span class="step-light on"></span>
+                                                                    <span class="step-light"></span>
+                                                                    <span class="step-light"></span>
+                                                                    <span class="step-light"></span>
+                                                                </div>
+                                                                <select class="select" name="" id="">
+                                                                    <option value="">예약대기</option>
+                                                                    <option value="">예약확정</option>
+                                                                    <option value="">팀장배정</option>
+                                                                    <option value="">철거중</option>
+                                                                    <option value="">결제대기</option>
+                                                                    <option value="">결제완료</option>
+                                                                </select>
+                                                            </div>
+                                                        </td>
+                                                        <td>2023.11.09 (목)</td>
+                                                        <td>서울시 강남구 청담동 134-38 청담자이 102-1302</td>
+                                                        <td>방배대리점 / 홍천기 차장</td>
+                                                        <td>2023.11.09 (목) 09:00</td>
+                                                        <td>
+                                                            <div class="block">
+                                                                <span class="badge-sm">직영</span>
+                                                                <span class="badge-sm-value">정철욱</span>
+                                                            </div>
+                                                            <div class="block">
+                                                                <span class="badge-sm">설비</span>
+                                                                <span class="badge-sm-value">이태욱</span>
+                                                            </div>
+                                                            <div class="block">
+                                                                <span class="badge-sm">마루</span>
+                                                                <span class="badge-sm-value">박영헌</span>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="dropup-center dropstart" >
+                                                                <button class="moreBtn" data-bs-toggle="dropdown" aria-expanded="false">...</button>
+                                                                <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item" href="#">상세정보</a></li>
+                                                                <li><a class="dropdown-item" href="#">팀장수정</a></li>
+                                                                <li><a class="dropdown-item red" href="#">강제 취소</a></li>
+                                                                <li><a class="dropdown-item red" href="#">당일 펑크</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="stepUI">
+                                                                <div class="stepWrap">
+                                                                    <span class="step-light on"></span>
+                                                                    <span class="step-light on"></span>
+                                                                    <span class="step-light on"></span>
+                                                                    <span class="step-light on"></span>
+                                                                    <span class="step-light"></span>
+                                                                    <span class="step-light"></span>
+                                                                </div>
+                                                                <select class="select" name="" id="">
+                                                                    <option value="">예약대기</option>
+                                                                    <option value="">예약확정</option>
+                                                                    <option value="">팀장배정</option>
+                                                                    <option value="">철거중</option>
+                                                                    <option value="">결제대기</option>
+                                                                    <option value="">결제완료</option>
+                                                                </select>
+                                                            </div>
+                                                        </td>
+                                                        <td>2023.11.09 (목)</td>
+                                                        <td>서울시 강남구 청담동 134-38 청담자이 102-1302</td>
+                                                        <td>방배대리점 / 홍천기 차장</td>
+                                                        <td>2023.11.09 (목) 09:00</td>
+                                                        <td>
+                                                            <div class="block">
+                                                                <span class="badge-sm">직영</span>
+                                                                <span class="badge-sm-value">정철욱</span>
+                                                            </div>
+                                                            <div class="block">
+                                                                <span class="badge-sm">설비</span>
+                                                                <span class="badge-sm-value">이태욱</span>
+                                                            </div>
+                                                            <div class="block">
+                                                                <span class="badge-sm">마루</span>
+                                                                <span class="badge-sm-value">박영헌</span>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="dropup-center dropstart" >
+                                                                <button class="moreBtn" data-bs-toggle="dropdown" aria-expanded="false">...</button>
+                                                                <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item" href="#">상세정보</a></li>
+                                                                <li><a class="dropdown-item" href="#">팀장수정</a></li>
+                                                                <li><a class="dropdown-item red" href="#">강제 취소</a></li>
+                                                                <li><a class="dropdown-item red" href="#">당일 펑크</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="stepUI">
+                                                                <div class="stepWrap">
+                                                                    <span class="step-light on"></span>
+                                                                    <span class="step-light on"></span>
+                                                                    <span class="step-light on"></span>
+                                                                    <span class="step-light on"></span>
+                                                                    <span class="step-light on"></span>
+                                                                    <span class="step-light"></span>
+                                                                </div>
+                                                                <select class="select" name="" id="">
+                                                                    <option value="">예약대기</option>
+                                                                    <option value="">예약확정</option>
+                                                                    <option value="">팀장배정</option>
+                                                                    <option value="">철거중</option>
+                                                                    <option value="">결제대기</option>
+                                                                    <option value="">결제완료</option>
+                                                                </select>
+                                                            </div>
+                                                        </td>
+                                                        <td>2023.11.09 (목)</td>
+                                                        <td>서울시 강남구 청담동 134-38 청담자이 102-1302</td>
+                                                        <td>방배대리점 / 홍천기 차장</td>
+                                                        <td>2023.11.09 (목) 09:00</td>
+                                                        <td>
+                                                            <div class="block">
+                                                                <span class="badge-sm">직영</span>
+                                                                <span class="badge-sm-value">정철욱</span>
+                                                            </div>
+                                                            <div class="block">
+                                                                <span class="badge-sm">설비</span>
+                                                                <span class="badge-sm-value">이태욱</span>
+                                                            </div>
+                                                            <div class="block">
+                                                                <span class="badge-sm">마루</span>
+                                                                <span class="badge-sm-value">박영헌</span>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="dropup-center dropstart" >
+                                                                <button class="moreBtn" data-bs-toggle="dropdown" aria-expanded="false">...</button>
+                                                                <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item" href="#">상세정보</a></li>
+                                                                <li><a class="dropdown-item" href="#">팀장수정</a></li>
+                                                                <li><a class="dropdown-item red" href="#">강제 취소</a></li>
+                                                                <li><a class="dropdown-item red" href="#">당일 펑크</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="stepUI">
+                                                                <div class="stepWrap">
+                                                                    <span class="step-light on"></span>
+                                                                    <span class="step-light on"></span>
+                                                                    <span class="step-light on"></span>
+                                                                    <span class="step-light on"></span>
+                                                                    <span class="step-light on"></span>
+                                                                    <span class="step-light on"></span>
+                                                                </div>
+                                                                <select class="select" name="" id="">
+                                                                    <option value="">예약대기</option>
+                                                                    <option value="">예약확정</option>
+                                                                    <option value="">팀장배정</option>
+                                                                    <option value="">철거중</option>
+                                                                    <option value="">결제대기</option>
+                                                                    <option value="">결제완료</option>
+                                                                </select>
+                                                            </div>
+                                                        </td>
+                                                        <td>2023.11.09 (목)</td>
+                                                        <td>서울시 강남구 청담동 134-38 청담자이 102-1302</td>
+                                                        <td>방배대리점 / 홍천기 차장</td>
+                                                        <td>2023.11.09 (목) 09:00</td>
+                                                        <td>
+                                                            <div class="block">
+                                                                <span class="badge-sm">직영</span>
+                                                                <span class="badge-sm-value">정철욱</span>
+                                                            </div>
+                                                            <div class="block">
+                                                                <span class="badge-sm">설비</span>
+                                                                <span class="badge-sm-value">이태욱</span>
+                                                            </div>
+                                                            <div class="block">
+                                                                <span class="badge-sm">마루</span>
+                                                                <span class="badge-sm-value">박영헌</span>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="dropup-center dropstart" >
+                                                                <button class="moreBtn" data-bs-toggle="dropdown" aria-expanded="false">...</button>
+                                                                <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item" href="#">상세정보</a></li>
+                                                                <li><a class="dropdown-item" href="#">팀장수정</a></li>
+                                                                <li><a class="dropdown-item red" href="#">강제 취소</a></li>
+                                                                <li><a class="dropdown-item red" href="#">당일 펑크</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+                                            <nav aria-label="Page navigation">
+                                                <ul class="pagination">
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#" aria-label="Previous">
+                                                    <span aria-hidden="true">&laquo;</span>
+                                                    </a>
+                                                </li>
+                                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#" aria-label="Next">
+                                                    <span aria-hidden="true">&raquo;</span>
+                                                    </a>
+                                                </li>
+                                                </ul>
+                                            </nav>
+
+                                        </div>
+                                    </div>
+
+                                    <!-- 하단 윈도우 -->
+                                    <div class="bottomDualTrayWrap">
+                                        <div class="tray">
+                                            <div class="trayHead">
+                                                <h3>현장상세철거내용</h3>
+                                                <button class="btn-border-sm blue">저장</button>
+                                            </div>
+                                            <div class="trayBody">
+                                                <div class="greyBx">
+                                                    1. 거실 욕실 문틀 & 도어 철거<br/>
+                                                    2. 현관 중문 철거<br/>
+                                                    3. 전체 천장 몰딩 철거<br/>
+                                                    4. 전체 걸레받이 철거<br/>
+                                                    5. 전체 조명 철거<br/>
+                                                    6. 주방 싱크대 철거<br/>
+                                                    7. 현관 신발장&낮은장 철거<br/>
+                                                    8. 안방 붙박이장 철거<br/>
+                                                    9. 거실 발코니 붙박이장 철거<br/>
+                                                    10. 거실 슬라이딩장 철거<br/>
+                                                    11. 거실 발코니 곰팡이 제거<br/>
+                                                    12. 거실욕실 바닥 타일 & 기본철거 (기구+천정)<br/>
+                                                    13. 안방욕실 기본철거(기구+천정)<br/>
+                                                    14. 서재방 책장 철거<br/>
+                                                    15. 거실 천정 박스 철거<br/>
+                                                    16. 현관 낮은장쪽 가벽철거현관&발코니 타일 재사용, 거실욕실 도어빼고 재사용 / 
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tray">
+                                            <div class="trayHead">
+                                                <h3>선택된 예약 팀장 (3)</h3>
+                                                <button class="btn-border-sm blue">수정</button>
+                                            </div>
+                                            <div class="trayBody">
+                                                <div class="teamCardWrap">
+                                                    <div class="teamCard">
+                                                        <h4>종합철거팀</h4>
+                                                        <a class="tel" href="tel:01055130825">01055130825</a>
+                                                        <div class="profileWrap">
+                                                            <div class="profile">
+                                                                <img src="./img/ic_profile_df.svg" alt="profile">
+                                                            </div>
+                                                            <div>
+                                                                <div class="name">정형욱</div>
+                                                                <div class="desc">
+                                                                    진입: 23-11-09 (목), 12:00
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="teamCard">
+                                                        <h4>종합철거팀</h4>
+                                                        <a class="tel" href="tel:01055130825">01055130825</a>
+                                                        <div class="profileWrap">
+                                                            <div class="profile">
+                                                                <img src="./img/ic_profile_df.svg" alt="profile">
+                                                            </div>
+                                                            <div>
+                                                                <div class="name">정형욱</div>
+                                                                <div class="desc">
+                                                                    진입: 23-11-09 (목), 12:00
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="teamCard">
+                                                        <h4>종합철거팀</h4>
+                                                        <a class="tel" href="tel:01055130825">01055130825</a>
+                                                        <div class="profileWrap">
+                                                            <div class="profile">
+                                                                <img src="./img/ic_profile_df.svg" alt="profile">
+                                                            </div>
+                                                            <div>
+                                                                <div class="name">정형욱</div>
+                                                                <div class="desc">
+                                                                    진입: 23-11-09 (목), 12:00
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="teamCard">
+                                                        <h4>종합철거팀</h4>
+                                                        <a class="tel" href="tel:01055130825">01055130825</a>
+                                                        <div class="profileWrap">
+                                                            <div class="profile">
+                                                                <img src="./img/ic_profile_df.svg" alt="profile">
+                                                            </div>
+                                                            <div>
+                                                                <div class="name">정형욱</div>
+                                                                <div class="desc">
+                                                                    진입: 23-11-09 (목), 12:00
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="teamCard">
+                                                        <h4>종합철거팀</h4>
+                                                        <a class="tel" href="tel:01055130825">01055130825</a>
+                                                        <div class="profileWrap">
+                                                            <div class="profile">
+                                                                <img src="./img/ic_profile_df.svg" alt="profile">
+                                                            </div>
+                                                            <div>
+                                                                <div class="name">정형욱</div>
+                                                                <div class="desc">
+                                                                    진입: 23-11-09 (목), 12:00
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- 이벤트 -->
+                                <div class="tab-pane fade" id="event-tab-pane" role="tabpanel" aria-labelledby="event-tab" tabindex="0">
+                                    ...
+                                </div>
+                                <!-- 시공사례 -->
+                                <div class="tab-pane fade" id="example-tab-pane" role="tabpanel" aria-labelledby="example-tab" tabindex="0">
+                                    ...
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SAMPLE -->
+    <div class="modal2 modal fade" id="sample" tabindex="-1" aria-labelledby="sampleLabel" aria-hidden="true">
+
+        <!-- 모달 width를 maxwidth로 설정해 주세요 -->
+        <div class="modal-dialog" style="max-width: 860px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title" id="sampleLabel">현장상세</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <!-- .modal-body를 form으로 감싸주세요  -->
+
+                <form>
+                    <div class="modal-body">
+                        <div class="modalForm">
+                            <!-- text -->
+                            <div class="tr">
+                                <div class="th">텍스트</div>
+                                <div class="td">
+                                    <input type="text" placeholder="제목을 입력하세요">
+                                </div>
+                            </div>
+                            <!-- select -->
+                            <div class="tr">
+                                <div class="th">셀렉트</div>
+                                <div class="td">
+                                    <select name="" id="">
+                                        <option value="1">1000003</option>
+                                        <option value="2">1000004</option>
+                                        <option value="3">1000005</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- date -->
+                            <div class="tr">
+                                <div class="th">캘린더</div>
+                                <div class="td">
+                                    <input type="text" class="calendar" id="datepicker2" placeholder="2023.02 ~ 현재">
+                                </div>
+                            </div>
+                            <!-- date + select -->
+                            <div class="tr">
+                                <div class="th">캘린더+셀렉트</div>
+                                <div class="td">
+                                    <div class="flexWrap">
+                                        <input type="text" class="calendar flatpickr-input" id="datepicker" value="2024-07-08 00:00">
+                                        <select name="" id="" style="width: auto;">
+                                            <option value="1">시작시간</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- textarea -->
+                            <div class="tr">
+                                <div class="th">textarea</div>
+                                <div class="td">
+                                    <textarea style="height: 120px;" placeholder="설명 내용을 입력해 주세요"></textarea>
+                                </div>
+                            </div>
+                            <!-- radio -->
+                            <div class="tr">
+                                <div class="th">라디오</div>
+                                <div class="td">
+                                    <label class="form-check">
+                                        <input type="radio" name="status2" checked>
+                                        <div class="radio">Y</div>
+                                    </label>
+                                    <label class="form-check">
+                                        <input type="radio" name="status2">
+                                        <div class="radio">N</div>
+                                    </label>
+                                    <label class="form-check">
+                                        <input type="radio" name="status2">
+                                        <div class="radio">X</div>
+                                    </label>
+                                </div>
+                            </div>
+                            <!-- tag -->
+                            <div class="tr">
+                                <div class="th">태그</div>
+                                <div class="td">
+                                    <div class="tagWrap">
+                                        <a href="#" class="appendTag"></a>
+                                        <div class="tagItem">사다리차:500,000</div>
+                                        <div class="tagItem">자재:0</div>
+                                        <div class="tagItem">폐기물:1,300,000</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- multy field -->
+                            <div class="tr">
+                                <div class="th">다중 입력 필드</div>
+                                <div class="td">
+                                    <div class="flexWrap">
+                                        <select name="" id="" style="width: auto;">
+                                            <option value="1">현장상태</option>
+                                        </select>
+                                        <input type="text">
+                                        <input type="text">
+                                        <input type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- 구분선 -->
+                            <hr/>
+
+                            <!-- 이미지 첨부 -->
+                            <div class="tr">
+                                <div class="th">현장참고사진</div>
+                                <div class="td">
+                                    <div class="fileHead">
+                                        <label class="fileAttach">
+                                            파일 선택
+                                            <input type="file">
+                                        </label>
+                                    </div>
+                                    <ul class="imgList">
+                                        <li><img src="./img/sampleImg.jpg" alt="sample"><button class="imgRemove"></button></li>
+                                        <li><img src="./img/sampleImg.jpg" alt="sample"><button class="imgRemove"></button></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- 파일첨부 -->
+                            <hr/>
+                            <div class="tr">
+                                <div class="th">첨부파일</div>
+                                <div class="td">
+                                    <div class="fileHead">
+                                        <label class="fileAttach">
+                                            파일 선택
+                                            <input type="file">
+                                        </label>
+                                        <div class="size">총 0 Bytes</div>
+                                    </div>
+                                    <ul class="fileList">
+                                        <li><div>첨부된파일1.pdf</div><button class="fileRemove">X</button></li>
+                                        <li><div>첨부된파일2.pdf</div><button class="fileRemove">X</button></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </form>
+                <div class="modal-footer">
+                    <button type="button" class="btn-transparent" data-bs-dismiss="modal">닫기</button>
+                    <button type="button" class="btn-primary">등록</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 현장팀장 -->
+    <div class="modal2 modal fade" id="teamLeader" tabindex="-1" aria-labelledby="teamLeaderLabel" aria-hidden="true">
+        <div class="modal-dialog" style="max-width: 860px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title" id="teamLeaderLabel">현장팀장</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form>
+                    <div class="modal-body">
+                        <div class="modalForm">
+                            <div class="tr">
+                                <div class="th">현장번호</div>
+                                <div class="td">
+                                    <select name="" id="">
+                                        <option value="1">1000003</option>
+                                        <option value="2">1000004</option>
+                                        <option value="3">1000005</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="tr">
+                                <div class="th">작업타입</div>
+                                <div class="td">
+                                    <select name="" id="">
+                                        <option value="1">종합철거</option>
+                                        <option value="2">종합철거</option>
+                                        <option value="3">종합철거</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="tr">
+                                <div class="th">직원</div>
+                                <div class="td">
+                                    <select name="" id="">
+                                        <option value="1">박태원</option>
+                                        <option value="2">박태원</option>
+                                        <option value="3">박태원</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="tr">
+                                <div class="th">작업일자</div>
+                                <div class="td">
+                                    <!-- flatpickr -->
+                                    <input type="text" class="calendar" id="datepicker3" placeholder="2023.02 ~ 현재">
+                                </div>
+                            </div>
+                            <div class="tr">
+                                <div class="th">작업시간</div>
+                                <div class="td">
+                                    <select name="" id="">
+                                        <option value="1">09:00</option>
+                                        <option value="2">09:00</option>
+                                        <option value="3">09:00</option>
+                                    </select>
+                                </div>
+                            </div>
+                    
+                            <div class="tr">
+                                <div class="th">설명</div>
+                                <div class="td">
+                                    <textarea style="height: 120px;" placeholder="설명 내용을 입력해 주세요"></textarea>
+                                </div>
+                            </div>
+                            <div class="tr">
+                                <div class="th">상태</div>
+                                <div class="td">
+                                    <label class="form-check">
+                                        <input type="radio" name="status3" checked>
+                                        <div class="radio">Y</div>
+                                    </label>
+                                    <label class="form-check">
+                                        <input type="radio" name="status3">
+                                        <div class="radio">N</div>
+                                    </label>
+                                    <label class="form-check">
+                                        <input type="radio" name="status3">
+                                        <div class="radio">X</div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="modal-footer">
+                    <button type="button" class="btn-transparent" data-bs-dismiss="modal">닫기</button>
+                    <button type="button" class="btn-primary">등록</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 현장상세 -->
+    <div class="modal2 modal fade" id="siteDetail" tabindex="-1" aria-labelledby="siteDetailLabel" aria-hidden="true">
+        <div class="modal-dialog" style="max-width: 860px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title" id="siteDetailLabel">현장상세</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form>
+                    <div class="modal-body">
+                        <div class="modalForm">
+                            <div class="tr half">
+                                <div class="th">현장번호</div>
+                                <div class="td">
+                                    <input type="text" placeholder="제목을 입력하세요">
+                                </div>
+                            </div>
+                            <div class="tr half">
+                                <div class="th">철거 선택사항</div>
+                                <div class="td">
+                                    <input type="text" placeholder="">
+                                </div>
+                            </div>
+                            <div class="tr">
+                                <div class="th">당일 현장 상태</div>
+                                <div class="td">
+                                    <select name="" id="">
+                                        <option value="1">당일 현장 상태</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="tr">
+                                <div class="th">당일 현장 상태</div>
+                                <div class="td">
+                                    <label class="form-check">
+                                        <input type="radio" name="status2" checked>
+                                        <div class="radio">거주중</div>
+                                    </label>
+                                    <label class="form-check">
+                                        <input type="radio" name="status2">
+                                        <div class="radio">당일이사</div>
+                                    </label>
+                                    <label class="form-check">
+                                        <input type="radio" name="status2">
+                                        <div class="radio">빈집상태</div>
+                                    </label>
+                                    <label class="form-check">
+                                        <input type="radio" name="status2">
+                                        <div class="radio">직접입력</div>
+                                    </label>
+                                    <input type="text" placeholder="" style="width: 54%;">
+                                </div>
+                            </div>
+                            <div class="tr">
+                                <div class="th">당일 현장상태 메모</div>
+                                <div class="td">
+                                    <input type="text" placeholder="">
+                                </div>
+                            </div>
+                            <div class="tr">
+                                <div class="th">현장 상세내용</div>
+                                <div class="td">
+                                    <input type="text" placeholder="">
+                                </div>
+                            </div>
+                            <div class="tr">
+                                <div class="th">현장 요청사항</div>
+                                <div class="td">
+                                    <input type="text" placeholder="">
+                                </div>
+                            </div>
+                            <div class="tr">
+                                <div class="th">긴급 메모사항</div>
+                                <div class="td">
+                                    <input type="text" placeholder="">
+                                </div>
+                            </div>
+                            <div class="tr">
+                                <div class="th">세대정보</div>
+                                <div class="td">
+                                    <input type="text" placeholder="">
+                                </div>
+                            </div>
+                            <div class="tr">
+                                <div class="th">설명</div>
+                                <div class="td">
+                                    <input type="text" placeholder="">
+                                </div>
+                            </div>
+                            <div class="tr">
+                                <div class="th">상태</div>
+                                <div class="td">
+                                    <label class="form-check">
+                                        <input type="radio" name="status1" checked>
+                                        <div class="radio">Y</div>
+                                    </label>
+                                    <label class="form-check">
+                                        <input type="radio" name="status1">
+                                        <div class="radio">N</div>
+                                    </label>
+                                    <!-- <label class="form-check">
+                                        <input type="radio" name="status1">
+                                        <div class="radio">X</div>
+                                    </label> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="modal-footer">
+                    <button type="button" class="btn-transparent" data-bs-dismiss="modal">닫기</button>
+                    <button type="button" class="btn-primary">등록</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 현장 -->
+    <div class="modal2 modal fade" id="siteFull" tabindex="-1" aria-labelledby="siteFullLabel" aria-hidden="true">
+        <div class="modal-dialog" style="max-width: 1200px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                <div class="h1Wrap">
+                    <h1 class="modal-title" id="siteFullLabel">
+                        현장
+                    </h1>
+                    <select name="" id="">
+                        <option value="1">협력업체</option>
+                    </select>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form>
+                    <div class="modal-body flexWrap">
+                        <!-- left layout -->
+                        <div class="modalForm">
+                            <div class="tr">
+                                <div class="th">우편번호</div>
+                                <div class="td">
+                                    <div class="flexWrap">
+                                        <input type="text" placeholder="15726" style="width: 94px">
+                                        <button class="btn-border-sm blue">우편번호검색</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tr">
+                                <div class="th">주소</div>
+                                <div class="td">
+                                    <input type="text" placeholder="자동 입력">
+                                </div>
+                            </div>
+                            <div class="tr">
+                                <div class="th">상세주소</div>
+                                <div class="td">
+                                    <input type="text" placeholder="상세 주소를 입력해 주세요">
+                                </div>
+                            </div>
+                            <div class="tr">
+                                <div class="th">현장타입</div>
+                                <div class="td">
+                                    <select name="" id="">
+                                        <option value="1">현장타입</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="tr">
+                                <div class="th">일반/사업자고객</div>
+                                <div class="td">
+                                    <select name="" id="">
+                                        <option value="1">일반/사업자고객</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="tr">
+                                <div class="th">영업사원</div>
+                                <div class="td">
+                                    <select name="" id="">
+                                        <option value="1">영업사원</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <hr/>
+                            <div class="tr">
+                                <div class="th">현장소장</div>
+                                <div class="td">
+                                    <select name="" id="">
+                                        <option value="1">현장소장</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="tr">
+                                <div class="th">철거현황</div>
+                                <div class="td">
+                                    <select name="" id="">
+                                        <option value="1">철거현황</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="tr">
+                                <div class="th">철거시작일</div>
+                                <div class="td">
+                                    <div class="flexWrap">
+                                        <input type="text" class="calendar" id="datepicker4">
+                                        <select name="" id="" style="width: auto;">
+                                            <option value="1">시작시간</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tr">
+                                <div class="th">철거종료일</div>
+                                <div class="td">
+                                    <input type="text" class="calendar" id="datepicker4">
+                                </div>
+                            </div>
+                            <div class="tr">
+                                <div class="th">철거예정일</div>
+                                <div class="td">
+                                    <input type="text" class="calendar" id="datepicker4">
+                                </div>
+                            </div>
+                            <div class="tr">
+                                <div class="th">마루철거일</div>
+                                <div class="td">
+                                    <input type="text" class="calendar" id="datepicker4">
+                                </div>
+                            </div>
+                            <div class="tr vertical">
+                                <div class="th">설명</div>
+                                <div class="td">
+                                    <textarea style="height: 120px;" placeholder="설명 내용을 입력해 주세요"></textarea>
+                                </div>
+                            </div>
+                    
+                            <div class="tr">
+                                <div class="th">상태</div>
+                                <div class="td">
+                                    <label class="form-check">
+                                        <input type="radio" name="status4" checked>
+                                        <div class="radio">Y</div>
+                                    </label>
+                                    <label class="form-check">
+                                        <input type="radio" name="status4">
+                                        <div class="radio">N</div>
+                                    </label>
+                                    <label class="form-check">
+                                        <input type="radio" name="status4">
+                                        <div class="radio">X</div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- right layout -->
+                        <div class="modalForm">
+                            <div class="tr">
+                                <div class="th">현장참고사진</div>
+                                <div class="td">
+                                    <div class="fileHead">
+                                        <label class="fileAttach">
+                                            파일 선택
+                                            <input type="file">
+                                        </label>
+                                    </div>
+                                    <ul class="imgList">
+                                        <li><img src="./img/sampleImg.jpg" alt="sample"><button class="imgRemove"></button></li>
+                                        <li><img src="./img/sampleImg.jpg" alt="sample"><button class="imgRemove"></button></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <hr/>
+                            <div class="tr">
+                                <div class="th">철거 항목</div>
+                                <div class="td">
+                                    <div class="tagWrap">
+                                        <!-- 철거항목 팝업 호출 -->
+                                        <a href="#" class="appendTag" onclick="modalInModalOpen('#checkList')"></a>
+
+                                        <div class="tagItem">종합철거:주방</div>
+                                        <div class="tagItem">종합철거:가구목대</div>
+                                        <div class="tagItem">종합철거:방문</div>
+                                        <div class="tagItem">종합철거:벽체</div>
+                                        <div class="tagItem">확장설비:확장</div>
+                                        <div class="tagItem">확장설비:셀프레벨링</div>
+                                        <div class="tagItem">보양수거:동선보양</div>
+                                        <div class="tagItem">보양수거:폐기물 수거</div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <hr/>
+                            <div class="tr">
+                                <div class="th">당일 현장상태</div>
+                                <div class="td">
+                                    <div class="flexWrap">
+                                        <select name="" id="" style="width: auto;">
+                                            <option value="1">현장상태</option>
+                                        </select>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tr">
+                                <div class="th">현장 상세내용</div>
+                                <div class="td">
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <div class="tr">
+                                <div class="th">현장 요청사항</div>
+                                <div class="td">
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <div class="tr">
+                                <div class="th">긴급 메모사항</div>
+                                <div class="td">
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <div class="tr">
+                                <div class="th">세대정보</div>
+                                <div class="td">
+                                    <div class="flexWrap">
+                                        <input type="text" placeholder="평수">
+                                        <input type="text" placeholder="공동현관비밀번호">
+                                        <input type="text" placeholder="세대비밀번호">
+                                    </div>
+                                </div>
+                            </div>
+                            <hr/>
+                            <div class="tr">
+                                <div class="th">팀장배정</div>
+                                <div class="td">
+                                    <div class="tagWrap">
+                                        <!-- 팀장배정 팝업 호출 -->
+                                        <a href="#" class="appendTag" onclick="modalInModalOpen('#leaderPick')"></a>
+                                        <div class="tagItem">설비/정철욱/010-2703-6212</div>
+                                        <div class="tagItem">마루철거/박영현/010-2824-7915</div>
+                                        <div class="tagItem">종합철거/박태원/010-2783-1357</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr/>
+                            <div class="tr">
+                                <div class="th">현장비용</div>
+                                <div class="td">
+                                    <div class="tagWrap">
+                                        <!-- 현장비용 팝업 호출 -->
+                                        <a href="#" class="appendTag" onclick="modalInModalOpen('#cost')"></a>
+                                        <div class="tagItem">사다리차:500,000</div>
+                                        <div class="tagItem">자재:0</div>
+                                        <div class="tagItem">폐기물:1,300,000</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr/>
+                            <div class="tr">
+                                <div class="th">청구서</div>
+                                <div class="td">
+                                    <div class="tagWrap">
+                                        <!-- 청구서 팝업 호출 -->
+                                        <a href="#" class="appendTag" onclick="modalInModalOpen('#bill')"></a>
+                                        <div class="tagItem">주방:205,000</div>
+                                        <div class="tagItem">벽체:0</div>
+                                        <div class="tagItem">욕실:0</div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="modal-footer">
+                    <button type="button" class="btn-transparent" data-bs-dismiss="modal">닫기</button>
+                    <button type="button" class="btn-primary">등록</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 철거항목 -->
+    <div class="modal2 modal" id="checkList">
+        <div class="dim">
+            <div class="modal-dialog" style="max-width: 1000px;">
+                <div class="modal-content" style="width: 1000px">
+                    <div class="modal-header">
+                    <div class="h1Wrap">
+                        <h1 class="modal-title" id="checkListLabel">
+                            철거항목
+                        </h1>
+                    </div>
+                    <button type="button" class="btn-close" onclick="modalInModalClose('#checkList')"></button>
+                    </div>
+                    <form>
+                        <div class="modal-body">
+                            <div class="checkList">
+                                <div class="columnItem">
+                                    <div class="tit">종합철거</div>
+                                    <div class="conWrap">
+                                        <label><input type="checkbox"><span class="checkIcon"></span><span>주방</span></label>
+                                        <label><input type="checkbox"><span class="checkIcon"></span><span>가구목대</span></label>
+                                        <label><input type="checkbox"><span class="checkIcon"></span><span>방문</span></label>
+                                        <label><input type="checkbox"><span class="checkIcon"></span><span>벽체</span></label>
+                                        <label><input type="checkbox"><span class="checkIcon"></span><span>현관</span></label>
+                                        <label><input type="checkbox"><span class="checkIcon"></span><span>천장</span></label>
+                                        <label><input type="checkbox"><span class="checkIcon"></span><span>욕실</span></label>
+                                        <label><input type="checkbox"><span class="checkIcon"></span><span>발코니베란다</span></label>
+                                        <label><input type="checkbox"><span class="checkIcon"></span><span>몰딩/장판</span></label>
+                                        <label><input type="checkbox"><span class="checkIcon"></span><span>콘센트복스 및 잡철거</span></label>
+                                    </div>
+                                </div>
+                                <div class="columnItem">
+                                    <div class="tit">수거/보양</div>
+                                    <div class="conWrap">
+                                        <label><input type="checkbox"><span class="checkIcon"></span><span>확장</span></label>
+                                        <label><input type="checkbox"><span class="checkIcon"></span><span>셀프레벨링</span></label>
+                                        <label><input type="checkbox"><span class="checkIcon"></span><span>주방 냉온수배관설비</span></label>
+                                        <label><input type="checkbox"><span class="checkIcon"></span><span>냉온수배관설비</span></label>
+                                        <label><input type="checkbox"><span class="checkIcon"></span><span>PVC하수배관설비</span></label>
+                                        <label><input type="checkbox"><span class="checkIcon"></span><span>분배기설비</span></label>
+                                        <label><input type="checkbox"><span class="checkIcon"></span><span>젠다이설비</span></label>
+                                        <label><input type="checkbox"><span class="checkIcon"></span><span>수도내림올림공사</span></label>
+                                        <label><input type="checkbox"><span class="checkIcon"></span><span>라디에이터 철거</span></label>
+                                        <label><input type="checkbox"><span class="checkIcon"></span><span>욕실 보일러배관신설</span></label>
+                                    </div>
+                                </div>
+                                <div class="columnItem">
+                                    <div class="tit">마루철거</div>
+                                    <div class="conWrap">
+                                        <label><input type="checkbox"><span class="checkIcon"></span><span>강마루(합판마루)</span></label>
+                                        <label><input type="checkbox"><span class="checkIcon"></span><span>강화마루</span></label>
+                                        <label><input type="checkbox"><span class="checkIcon"></span><span>데코타일</span></label>
+                                        <label><input type="checkbox"><span class="checkIcon"></span><span>냉온수배관설비</span></label>
+                                        <label><input type="checkbox"><span class="checkIcon"></span><span>스펀지마루</span></label>
+                                        <label><input type="checkbox"><span class="checkIcon"></span><span>폴리싱타일</span></label>
+                                        <label><input type="checkbox"><span class="checkIcon"></span><span>MD마루</span></label>
+                                        <label><input type="checkbox"><span class="checkIcon"></span><span>맥반석마루</span></label>
+                                        <label><input type="checkbox"><span class="checkIcon"></span><span>원목마루</span></label>
+                                        <label><input type="checkbox"><span class="checkIcon"></span><span>카펫마루</span></label>
+                                        <label><input type="checkbox"><span class="checkIcon"></span><span>에폭시마루</span></label>
+                                        <label><input type="checkbox"><span class="checkIcon"></span><span>에폭시마루</span></label>
+                                        <label><input type="checkbox"><span class="checkIcon"></span><span>우레탄옥상</span></label>
+                                        <label><input type="checkbox"><span class="checkIcon"></span><span>장판샌딩</span></label>
+                                        <label><input type="checkbox"><span class="checkIcon"></span><span>마루기본샌딩</span></label>
+                                        <label><input type="checkbox"><span class="checkIcon"></span><span>마루 기타 옵션작업</span></label>
+                                    </div>
+                                </div>
+                                <div class="columnItem">
+                                    <div class="tit">확장설비</div>
+                                    <div class="conWrap">
+                                        <label><input type="checkbox"><span class="checkIcon"></span><span>엘리베이터 보양</span></label>
+                                        <label><input type="checkbox"><span class="checkIcon"></span><span>동선보양</span></label>
+                                        <label><input type="checkbox"><span class="checkIcon"></span><span>세대내보양</span></label>
+                                        <label><input type="checkbox"><span class="checkIcon"></span><span>폐기물수거</span></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="modal-footer">
+                        <button type="button" class="btn-transparent" onclick="modalInModalClose('#checkList')">닫기</button>
+                        <button type="button" class="btn-primary">저장</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- 팀장 배정 -->
+    <div class="modal2 modal" id="leaderPick">
+        <div class="dim">
+            <div class="modal-dialog" style="max-width: 860px;">
+                <div class="modal-content" style="width: 860px;">
+                    <div class="modal-header">
+                    <div class="h1Wrap">
+                        <h1 class="modal-title" id="leaderPickLabel">
+                            팀장 배정
+                        </h1>
+                    </div>
+                    <button type="button" class="btn-close" onclick="modalInModalClose('#leaderPick')"></button>
+                    </div>
+                    <form>
+                        <div class="modal-body flexWrap gap20">
+                            <div class="modalForm">
+                                <div class="tr">
+                                    <div class="th">작업타입</div>
+                                    <div class="td">
+                                        <select name="" id="">
+                                            <option value="1">현장타입</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="tr">
+                                    <div class="th">직원</div>
+                                    <div class="td">
+                                        <select name="" id="">
+                                            <option value="1">직원</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="tr">
+                                    <div class="th">시작일자</div>
+                                    <div class="td">
+                                        <div class="flexWrap">
+                                            <input type="text" class="calendar flatpickr-input" id="datepicker" placeholder="시작일자">
+                                            <select name="" id="" style="width: auto;">
+                                                <option value="1">시작시간</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="addGrid"><button class="btn-border">추가</button></div>
+                        </div>
+                    </form>
+                    <div class="grid">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="">작업타입</th>
+                                    <th class="">직원</th>
+                                    <th class="">시작일자</th>
+                                    <th class="">시작시간</th>
+                                    <th class="wid_50">삭제</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- grid noData -->
+                                <tr class="noData">
+                                    <td>
+                                        <div class="noDataMsg">
+                                            <svg width="25" height="37" viewBox="0 0 25 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M11.4182 13.374C11.3338 13.4588 11.193 13.4588 11.1085 13.374C11.0897 13.3551 11.0757 13.3316 11.0663 13.3127L9.43308 14.9523C9.25005 15.136 8.95438 15.136 8.76666 14.9523L7.14755 13.3269C6.96452 13.1431 6.96452 12.8463 7.14755 12.6578L8.78543 11.0135C8.75258 11.0041 8.72442 10.9853 8.70096 10.9617C8.61648 10.8769 8.61648 10.7356 8.70096 10.6508L9.10456 10.2456L8.75727 9.89694L10.0385 8.61072L10.3858 8.95936L10.7894 8.55418C10.8738 8.46938 11.0146 8.46938 11.0991 8.55418C11.1226 8.57774 11.1414 8.61072 11.1507 8.63899L12.7886 6.9947C12.9717 6.81095 13.2673 6.81095 13.455 6.9947L15.0742 8.62014C15.2572 8.80389 15.2572 9.10071 15.0742 9.28916L13.441 10.9287C13.441 10.9287 13.4832 10.9523 13.502 10.9711C13.5864 11.0559 13.5864 11.1973 13.502 11.2821L13.0984 11.6873L19.3214 17.9346L25 12.2338L13.9103 1.08657C13.1312 0.304476 11.8688 0.304476 11.0897 1.08657L0.708654 11.513L13.1828 24.0359L13.5864 23.6307C13.6709 23.5459 13.8117 23.5459 13.8962 23.6307C13.915 23.6496 13.929 23.6731 13.9384 23.692L15.5716 22.0524C15.7546 21.8687 16.0503 21.8687 16.238 22.0524L17.8571 23.6779C18.0402 23.8616 18.0402 24.1584 17.8571 24.3469L16.2193 25.9912C16.2521 26.0006 16.2803 26.0194 16.3037 26.043C16.3882 26.1278 16.3882 26.2691 16.3037 26.3539L15.9001 26.7591L16.2474 27.1078L14.9662 28.394L14.6189 28.0453L14.2153 28.4505C14.1308 28.5353 13.9901 28.5353 13.9056 28.4505C13.8821 28.427 13.8633 28.394 13.854 28.3657L12.2161 30.01C12.033 30.1938 11.7374 30.1938 11.5497 30.01L9.93054 28.3846C9.74751 28.2008 9.74751 27.904 9.93054 27.7155L11.5637 26.076C11.5637 26.076 11.5215 26.0524 11.5027 26.0336C11.4182 25.9488 11.4182 25.8074 11.5027 25.7226L11.9063 25.3174L5.68331 19.0701L0 24.7756L11.0944 35.9134C11.8735 36.6955 13.1359 36.6955 13.915 35.9134L24.3007 25.487L11.8265 12.9641L11.4229 13.3693L11.4182 13.374Z" fill="#181B20"/>
+                                            </svg>
+                                            데이터가 없습니다.
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>종합철거</td>
+                                    <td>팀장 / 김윤형 / 010-7445-8905</td>
+                                    <td>2024-07-03</td>
+                                    <td>08:30</td>
+                                    <td>
+                                        <button class="rowDel"></button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn-transparent" onclick="modalInModalClose('#leaderPick')">닫기</button>
+                        <button type="button" class="btn-primary">저장</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- 현장 비용 -->
+    <div class="modal2 modal" id="cost">
+        <div class="dim">
+            <div class="modal-dialog" style="max-width: 1120px;">
+                <div class="modal-content" style="width: 1120px;">
+                    <div class="modal-header">
+                    <div class="h1Wrap">
+                        <h1 class="modal-title" id="costLabel">
+                            현장 비용
+                        </h1>
+                        <select name="" id="">
+                            <option value="1">현장팀장</option>
+                            <option value="2">현장팀장</option>
+                            <option value="3">현장팀장</option>
+                        </select>
+                        <h3 class="count">2 건</h3>
+                        <h3 class="point">합계금액 : 422,500</h3>
+                    </div>
+                    <button type="button" class="btn-close" onclick="modalInModalClose('#cost')"></button>
+                    </div>
+                    <form>
+                        <div class="modal-body">
+                            <div class="modalForm">
+                                <div class="tr">
+                                    <div class="th">사다리차</div>
+                                    <div class="td">
+                                        <div class="flexWrap">
+                                            <input type="text" placeholder="사용시간">
+                                            <input type="text" placeholder="총 비용" style="width: 160px;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tr">
+                                    <div class="th">폐기물</div>
+                                    <div class="td">
+                                        <div class="flexWrap">
+                                            <input type="text" placeholder="비고">
+                                            <input type="text" placeholder="총 비용" style="width: 160px;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tr">
+                                    <div class="th">자재</div>
+                                    <div class="td">
+                                        <div class="flexWrap">
+                                            <input type="text" placeholder="비고">
+                                            <input type="text" placeholder="총 비용" style="width: 160px;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tr">
+                                    <div class="th">기타</div>
+                                    <div class="td">
+                                        <div class="flexWrap">
+                                            <input type="text" placeholder="비고">
+                                            <input type="text" placeholder="총 비용" style="width: 160px;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr style="margin: 30px 0 10px;" />
+                                <h3>인력</h3>
+                                <div class="modal-body flexWrap">
+                                    <div class="modalForm">
+                                        <div class="tr vertical">
+                                            <div class="td">
+                                                <div class="flexWrap">
+                                                    <input type="text" placeholder="이름" style="width: 90px;">
+                                                    <input type="text" placeholder="주민등록번호" style="width:150px;">
+                                                    <select name="" id="" style="width: auto;">
+                                                        <option value="1">은행</option>
+                                                        <option value="1">OOOO은행</option>
+                                                    </select>
+                                                    <input type="text" placeholder="계좌번호">
+                                                    <input type="text" placeholder="예금주" style="width: 90px;">
+                                                    <input type="text" placeholder="일당" style="width: 90px;">
+                                                    <input type="text" placeholder="일수" style="width: 60px;">
+                                                    <input type="text" placeholder="비용" style="width: 100px;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="addGrid"><button class="btn-border">추가</button></div>
+                                </div>
+                            </div>
+            
+                        </div>
+                    </form>
+                    <div class="grid">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="">이름</th>
+                                    <th class="">주민등록번호</th>
+                                    <th class="">은행</th>
+                                    <th class="">계좌번호</th>
+                                    <th class="">예금주</th>
+                                    <th class="">일당</th>
+                                    <th class="">일수</th>
+                                    <th class="">비용</th>
+                                    <th class="wid_50">삭제</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- grid noData -->
+                                <tr class="noData">
+                                    <td>
+                                        <div class="noDataMsg">
+                                            <svg width="25" height="37" viewBox="0 0 25 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M11.4182 13.374C11.3338 13.4588 11.193 13.4588 11.1085 13.374C11.0897 13.3551 11.0757 13.3316 11.0663 13.3127L9.43308 14.9523C9.25005 15.136 8.95438 15.136 8.76666 14.9523L7.14755 13.3269C6.96452 13.1431 6.96452 12.8463 7.14755 12.6578L8.78543 11.0135C8.75258 11.0041 8.72442 10.9853 8.70096 10.9617C8.61648 10.8769 8.61648 10.7356 8.70096 10.6508L9.10456 10.2456L8.75727 9.89694L10.0385 8.61072L10.3858 8.95936L10.7894 8.55418C10.8738 8.46938 11.0146 8.46938 11.0991 8.55418C11.1226 8.57774 11.1414 8.61072 11.1507 8.63899L12.7886 6.9947C12.9717 6.81095 13.2673 6.81095 13.455 6.9947L15.0742 8.62014C15.2572 8.80389 15.2572 9.10071 15.0742 9.28916L13.441 10.9287C13.441 10.9287 13.4832 10.9523 13.502 10.9711C13.5864 11.0559 13.5864 11.1973 13.502 11.2821L13.0984 11.6873L19.3214 17.9346L25 12.2338L13.9103 1.08657C13.1312 0.304476 11.8688 0.304476 11.0897 1.08657L0.708654 11.513L13.1828 24.0359L13.5864 23.6307C13.6709 23.5459 13.8117 23.5459 13.8962 23.6307C13.915 23.6496 13.929 23.6731 13.9384 23.692L15.5716 22.0524C15.7546 21.8687 16.0503 21.8687 16.238 22.0524L17.8571 23.6779C18.0402 23.8616 18.0402 24.1584 17.8571 24.3469L16.2193 25.9912C16.2521 26.0006 16.2803 26.0194 16.3037 26.043C16.3882 26.1278 16.3882 26.2691 16.3037 26.3539L15.9001 26.7591L16.2474 27.1078L14.9662 28.394L14.6189 28.0453L14.2153 28.4505C14.1308 28.5353 13.9901 28.5353 13.9056 28.4505C13.8821 28.427 13.8633 28.394 13.854 28.3657L12.2161 30.01C12.033 30.1938 11.7374 30.1938 11.5497 30.01L9.93054 28.3846C9.74751 28.2008 9.74751 27.904 9.93054 27.7155L11.5637 26.076C11.5637 26.076 11.5215 26.0524 11.5027 26.0336C11.4182 25.9488 11.4182 25.8074 11.5027 25.7226L11.9063 25.3174L5.68331 19.0701L0 24.7756L11.0944 35.9134C11.8735 36.6955 13.1359 36.6955 13.915 35.9134L24.3007 25.487L11.8265 12.9641L11.4229 13.3693L11.4182 13.374Z" fill="#181B20"/>
+                                            </svg>
+                                            데이터가 없습니다.
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="">홍길동</td>
+                                    <td class="">801201-1010101</td>
+                                    <td class="">전북신한은행</td>
+                                    <td class="">123-45-72619372</td>
+                                    <td class="">홍길동(주식회사)</td>
+                                    <td class="">120,000</td>
+                                    <td class="">10</td>
+                                    <td class="">1,200,000</td>
+                                    <td>
+                                        <button class="rowDel"></button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn-transparent" onclick="modalInModalClose('#cost')">닫기</button>
+                        <button type="button" class="btn-primary">현장비용 적용</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 청구서 -->
+    <div class="modal2 modal" id="bill">
+        <div class="dim">
+            <div class="modal-dialog" style="max-width: 1080px;">
+                <div class="modal-content" style="width: 1080px;">
+                    <div class="modal-header">
+                    <div class="h1Wrap">
+                        <h1 class="modal-title" id="billLabel">
+                            청구서
+                        </h1>
+                        <select name="" id="">
+                            <option value="1">팀장 / 김윤형 / 010-7445-8905</option>
+                        </select>
+                        <h3 class="count">1건</h3>
+                        <h3 class="point">합계금액 : 70,000</h3>
+                    </div>
+                    <button type="button" class="btn-close" onclick="modalInModalClose('#bill')"></button>
+                    </div>
+                    <form>
+                        <div class="modal-body">
+                            <div class="modalForm">
+                                <div class="flexWrap dualWrap">
+                                    <div class="item">
+                                        <div class="th">이전사진</div>
+                                        <div class="td">
+                                            <div class="fileHead">
+                                                <label class="fileAttach">
+                                                    파일 선택
+                                                    <input type="file">
+                                                </label>
+                                            </div>
+                                            <ul class="imgList">
+                                                <li><img src="./img/sampleImg.jpg" alt="sample"><button class="imgRemove"></button></li>
+                                                <li><img src="./img/sampleImg.jpg" alt="sample"><button class="imgRemove"></button></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="th">이후사진</div>
+                                        <div class="td">
+                                            <div class="fileHead">
+                                                <label class="fileAttach">
+                                                    파일 선택
+                                                    <input type="file">
+                                                </label>
+                                            </div>
+                                            <ul class="imgList">
+                                                <li><img src="./img/sampleImg.jpg" alt="sample"><button class="imgRemove"></button></li>
+                                                <li><img src="./img/sampleImg.jpg" alt="sample"><button class="imgRemove"></button></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr style="margin: 30px 0 10px;" />
+                                <h3>청구서</h3>
+                                <div class="modal-body flexWrap">
+                                    <div class="modalForm">
+                                        <div class="tr vertical">
+                                            <div class="td">
+                                                <div class="flexWrap">
+                                                    <select name="" id="">
+                                                        <option value="1">대분류</option>
+                                                    </select>
+                                                    <input type="text" placeholder="공간설명">
+                                                    <select name="" id="">
+                                                        <option value="1">중분류</option>
+                                                    </select>
+                                                    <select name="" id="">
+                                                        <option value="1">소분류</option>
+                                                    </select>
+                                                    <input type="text" placeholder="입력">
+                                                    <select name="" id="">
+                                                        <option value="1">단가단위</option>
+                                                    </select>
+                                                    <input type="text" placeholder="금액">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="addGrid"><button class="btn-border">추가</button></div>
+                                </div>
+                            </div>
+            
+                        </div>
+                    </form>
+                    <div class="grid">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="">대분류</th>
+                                    <th class="">공간설명</th>
+                                    <th class="">중분류</th>
+                                    <th class="">소분류</th>
+                                    <th class="">입력</th>
+                                    <th class="">단위</th>
+                                    <th class="">금액</th>
+                                    <th class="wid_50">삭제</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- grid noData -->
+                                <tr class="noData">
+                                    <td>
+                                        <div class="noDataMsg">
+                                            <svg width="25" height="37" viewBox="0 0 25 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M11.4182 13.374C11.3338 13.4588 11.193 13.4588 11.1085 13.374C11.0897 13.3551 11.0757 13.3316 11.0663 13.3127L9.43308 14.9523C9.25005 15.136 8.95438 15.136 8.76666 14.9523L7.14755 13.3269C6.96452 13.1431 6.96452 12.8463 7.14755 12.6578L8.78543 11.0135C8.75258 11.0041 8.72442 10.9853 8.70096 10.9617C8.61648 10.8769 8.61648 10.7356 8.70096 10.6508L9.10456 10.2456L8.75727 9.89694L10.0385 8.61072L10.3858 8.95936L10.7894 8.55418C10.8738 8.46938 11.0146 8.46938 11.0991 8.55418C11.1226 8.57774 11.1414 8.61072 11.1507 8.63899L12.7886 6.9947C12.9717 6.81095 13.2673 6.81095 13.455 6.9947L15.0742 8.62014C15.2572 8.80389 15.2572 9.10071 15.0742 9.28916L13.441 10.9287C13.441 10.9287 13.4832 10.9523 13.502 10.9711C13.5864 11.0559 13.5864 11.1973 13.502 11.2821L13.0984 11.6873L19.3214 17.9346L25 12.2338L13.9103 1.08657C13.1312 0.304476 11.8688 0.304476 11.0897 1.08657L0.708654 11.513L13.1828 24.0359L13.5864 23.6307C13.6709 23.5459 13.8117 23.5459 13.8962 23.6307C13.915 23.6496 13.929 23.6731 13.9384 23.692L15.5716 22.0524C15.7546 21.8687 16.0503 21.8687 16.238 22.0524L17.8571 23.6779C18.0402 23.8616 18.0402 24.1584 17.8571 24.3469L16.2193 25.9912C16.2521 26.0006 16.2803 26.0194 16.3037 26.043C16.3882 26.1278 16.3882 26.2691 16.3037 26.3539L15.9001 26.7591L16.2474 27.1078L14.9662 28.394L14.6189 28.0453L14.2153 28.4505C14.1308 28.5353 13.9901 28.5353 13.9056 28.4505C13.8821 28.427 13.8633 28.394 13.854 28.3657L12.2161 30.01C12.033 30.1938 11.7374 30.1938 11.5497 30.01L9.93054 28.3846C9.74751 28.2008 9.74751 27.904 9.93054 27.7155L11.5637 26.076C11.5637 26.076 11.5215 26.0524 11.5027 26.0336C11.4182 25.9488 11.4182 25.8074 11.5027 25.7226L11.9063 25.3174L5.68331 19.0701L0 24.7756L11.0944 35.9134C11.8735 36.6955 13.1359 36.6955 13.915 35.9134L24.3007 25.487L11.8265 12.9641L11.4229 13.3693L11.4182 13.374Z" fill="#181B20"/>
+                                            </svg>
+                                            데이터가 없습니다.
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>주방</td>
+                                    <td>테이블</td>
+                                    <td>메인 주방</td>
+                                    <td>상부 하부장 철거</td>
+                                    <td>12</td>
+                                    <td>미터(m)</td>
+                                    <td>70,000</td>
+                                    <td>
+                                        <button class="rowDel"></button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn-transparent" onclick="modalInModalClose('#bill')">닫기</button>
+                        <button type="button" class="btn-primary">저장</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function modalInModalOpen(e) {
+            let checkList = document.querySelector(e)
+            checkList.classList.add('ac')
+        }
+        function modalInModalClose(e) {
+            let checkList = document.querySelector(e)
+            checkList.classList.remove('ac')
+        }
+    </script>
+
+
+    <script src="./js/flatpickr.js"></script>
+    <script src="./bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>철거의기준</title>
+    <link rel="icon" href="./img/favicon.png" type="image/x-icon"> 
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <section class="account-wrap">
+        <h2>안녕하세요, 홍길동님</h2>
+        <div class="loginWrap">
+            <h3 class="subtit">로그인할 아이디를 선택해 주세요</h3>
+            <div class="companyWrap">
+                <div class="id">홍길동 컴퍼니</div>
+                <div class="bottom">
+                    <span class="grey4">123-45-00361</span>
+                    <span class="divider"></span>
+                    <span class="grey4">대표</span>
+                    <span class="grey5">홍길동</span>
+                </div>
+
+                <ul class="etcAccount">
+
+                    <li class="item">
+                        <div class="id">홍길동 컴퍼니</div>
+                        <div class="bottom">
+                            <span class="grey4">123-45-00361</span>
+                            <span class="divider"></span>
+                            <span class="grey4">대표</span>
+                            <span class="grey5">홍길동</span>
+                        </div>
+                    </li>
+
+                    <li class="item">
+                        <div class="id">주식회사 업스탠다드</div>
+                        <div class="bottom">
+                            <span class="grey4">225-86-02687</span>
+                            <span class="divider"></span>
+                            <span class="grey4">대표</span>
+                            <span class="grey5">최태환</span>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="id">주식회사 업스탠다드</div>
+                        <div class="bottom">
+                            <span class="grey4">225-86-02687</span>
+                            <span class="divider"></span>
+                            <span class="grey4">대표</span>
+                            <span class="grey5">최태환</span>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="id">주식회사 업스탠다드</div>
+                        <div class="bottom">
+                            <span class="grey4">225-86-02687</span>
+                            <span class="divider"></span>
+                            <span class="grey4">대표</span>
+                            <span class="grey5">최태환</span>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="id">주식회사 업스탠다드</div>
+                        <div class="bottom">
+                            <span class="grey4">225-86-02687</span>
+                            <span class="divider"></span>
+                            <span class="grey4">대표</span>
+                            <span class="grey5">최태환</span>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+            <button class="btn-primary">회사 접속하기</button>
+        </div>
+        <div class="divider-land"></div>
+        <div>
+            <button class="btn-secondary">다른 회사에 직원 등록요청</button>
+            <button class="btn-secondary">신규 기업 등록</button>
+        </div>
+        <div><a href="#" class="logout" >로그아웃</a></div>
+
+    </section>
+
+
+    <!-- 로그인 아이디 선택 -->
+    <script>
+        const companyWrap = document.querySelector('.companyWrap')
+        const etcAccount = document.querySelector('.etcAccount')
+        companyWrap.addEventListener('click', () => {
+            etcAccount.classList.toggle('ac')
+        })
+    </script>
+
+</body>
+</html>
