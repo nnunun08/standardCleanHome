@@ -312,6 +312,14 @@ h2 {
   stroke: #fff;
 }
 @media screen and (max-width: 769px) {
+  .section--visual {
+    height: 112vw;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+    min-height: 600px;
+    max-height: -moz-fit-content;
+    max-height: fit-content;
+  }
   .section--visual .visual {
     margin-left: 6%;
   }
@@ -375,13 +383,17 @@ h2 {
   line-height: 150%; /* 48px */
   letter-spacing: -0.64px;
 }
-@media screen and (max-width: 768px) {
-  .section--intro .textWrap .bold {
-    font-size: 24px;
-  }
-}
 .section--intro .textWrap .bold + .bold {
   margin-top: 36px;
+}
+@media screen and (max-width: 768px) {
+  .section--intro .textWrap span {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+  .section--intro .textWrap .bold {
+    font-size: 21px;
+  }
 }
 .section--intro .imgBg {
   flex: 1 0 200px;
@@ -398,6 +410,15 @@ h2 {
   .section--intro .textWrap {
     padding: 0 24px;
     margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 769px) {
+  .section--intro {
+    margin-top: 170px;
+    margin-bottom: 0;
+  }
+  .section--intro .imgBg {
+    height: 60vw;
   }
 }
 
@@ -441,11 +462,12 @@ h2 {
 }
 .section--partner .team .item .profile {
   max-width: 218px;
+  min-width: 130px;
   width: 20vw;
   aspect-ratio: 1/1;
   border-radius: 50%;
   overflow: hidden;
-  margin-bottom: 26px;
+  margin-bottom: 13%;
 }
 .section--partner .team .item .profile img {
   width: 100%;
@@ -486,6 +508,11 @@ h2 {
   padding-top: 142px;
   padding-bottom: 135px;
   text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .section--price {
+    padding: 120px 0;
+  }
 }
 .section--price .inner, .section--price .inner-full {
   max-width: 1240px;
@@ -588,6 +615,7 @@ h2 {
 .section--service {
   text-align: center;
   margin-bottom: 150px;
+  margin-bottom: 200px;
 }
 .section--service .sectionTit {
   padding: 0 20px;
@@ -756,6 +784,17 @@ h2 {
   }
   .section--service .tabWrap .tab-content .tab-pane .mesg {
     padding: 20px;
+    bottom: unset;
+    top: 90%;
+    margin: 0 8px;
+    border-radius: 8px;
+    width: calc(100% - 16px);
+  }
+  .section--service .tabWrap .tab-content .tab-pane .mesg .tit {
+    font-size: 16px;
+  }
+  .section--service .tabWrap .tab-content .tab-pane .mesg .desc {
+    font-size: 14px;
   }
   .section--service .nav {
     flex-wrap: nowrap;
@@ -916,6 +955,7 @@ h2 {
     min-height: -moz-max-content;
     min-height: max-content;
     height: auto;
+    margin-bottom: 160px;
   }
   .section--flow .inner, .section--flow .inner-full {
     transform: none;
@@ -1051,6 +1091,11 @@ h2 {
 }
 .section--interview .interview .item:nth-child(2n) {
   transform: translateY(60px);
+}
+@media screen and (max-width: 768px) {
+  .section--interview .interview {
+    margin-top: 0;
+  }
 }
 
 .module--cta {
