@@ -7,6 +7,8 @@
     <link rel="icon" href="./img/favicon.png" type="image/x-icon"> 
     <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.min.css"  integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="./css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/slick-theme.css"/>
     <link rel="stylesheet" href="./css/style.css">
     <script src="./aos/aos.js"></script>
 
@@ -31,8 +33,6 @@
         <ul class="right">
             <li><a href="http://d1047.raptors.co.kr/login" class="login">로그인</a></li>
             <li><a href="http://d1047.raptors.co.kr/sign_up" class="signup">회원가입</a></li>
-
-            
         </ul>
 
         <div class="hambur mobileMenuToggle">
@@ -67,35 +67,301 @@
         <script src="/js/mobileMenuToggle.js"></script>
     </div>
 
-    <div class="section--subVisual construct">
-        <div class="inner">
-            <div class="sub">시공사례</div>
-            <h2>철거의 기준이 만든 현장을 확인해 보세요</h2>
+    <div class="community chargeDetail">
+        <div class="inner-full">
+            <div>
+                <div class="pageIntro">
+                    <h2>서울시 강남구 청담동 134-38 청담자이</h2>
+                    <a href="javascript:window.history.back();" class="back">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17" fill="none">
+                            <path d="M9 1L1.5 8.5M1.5 8.5L9 16M1.5 8.5H18" stroke="#222222" stroke-width="1.5"/>
+                        </svg>
+                        목록으로
+                    </a>
+                </div>
+                <div class="pageDate">철거일자 : 2023-11-09 (목) 09:00</div>
+            </div>
+
+            <div class="thumbCover" data-bs-toggle="modal" data-bs-target="#imgSlide">
+                <div class="before">
+                    <img src="./img/dummy.png" alt="img">
+                </div>
+                <div class="after">
+                    <img src="./img/dummy.png" alt="img">
+                    <img src="./img/dummy02.png" alt="img">
+                    <img src="./img/dummy03.png" alt="img">
+                    <img src="./img/dummy.png" alt="img">
+                </div>
+                <div class="text left">이전사진</div>
+                <div class="text right">이후사진</div>
+            </div>
+        </div>
+
+        <!-- 이미지 상세 팝업 (슬라이드타입) -->
+        <div class="imgSlideModal modal2 modal fade" id="imgSlide" tabindex="-1" aria-labelledby="imgSlideLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="titWrap">
+                            <div class="caption">시공사례</div>
+                            <div class="tit">강남구 청담동 청담자이</div>
+                            <div class="desc">작성자 : {작성자}</div>
+                        </div>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="single-item">
+                            <div><img src="./img/dummy.png" alt="img"></div>
+                            <div><img src="./img/dummy02.png" alt="img"></div>
+                            <div><img src="./img/dummy03.png" alt="img"></div>
+                            <div><img src="./img/dummy02.png" alt="img"></div>
+                            <div><img src="./img/dummy.png" alt="img"></div>
+                            <div><img src="./img/dummy03.png" alt="img"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="inner sticky">
+            <div class="bodyCon">
+
+                <div class="constructInfo" style="margin-top: 0;">
+                    <h4>현장 정보</h4>
+                    <div class="infoSection">
+                        <div class="th">
+                            철거요청 선택사항
+                        </div>
+                        <div class="td">
+                            <div class="cate">
+                                <p>종합철거</p>
+                                <div class="checkList">
+                                    <span>주방</span>
+                                    <span>현관</span>
+                                    <span>가구</span>
+                                    <span>목대</span>
+                                </div>
+                            </div>
+                            <div class="cate">
+                                <p>수거/보양</p>
+                                <div class="checkList">
+                                    <span>강마루 25평</span>
+                                </div>
+                            </div>
+                            <div class="cate">
+                                <p>마루철거</p>
+                                <div class="checkList">
+                                    <span>강마루 25평</span>
+                                </div>
+                            </div>
+                            <div class="cate">
+                                <p>확장설비</p>
+                                <div class="checkList">
+                                    <span>양변기 하수배관 설비</span>
+                                <span>코어작업</span>
+                                </div>
+                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="infoSection">
+                        <div class="th">
+                            세대 정보
+                        </div>
+                        <div class="td">
+                            <div class="cate">
+                                <p>평수</p>
+                                <div class="checkList">
+                                    <span>전용면적 50평</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="infoSection">
+                        <div class="th">
+                            당일 현장 상태
+                        </div>
+                        <div class="td">
+                            <div class="cate">
+                                <p>정보</p>
+                                <div class="checkList">
+                                    <span>사는 집 공사에요</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="infoSection">
+                        <div class="th">
+                            철거 상세내용
+                        </div>
+                        <div class="td">
+                            <div class="cate">
+                                <p>안방 욕시 기본 철거, 문틀 7세트, 거실 확장, 공용욕실 전체 철거, 현관장 철거</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tray">
+                    <ul class="nav nav-tabs tab3" id="finalTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="step3-tab1" data-bs-toggle="tab" data-bs-target="#step3-tab1-pane" type="button" role="tab" aria-controls="step3-tab1-pane" aria-selected="true">종합 철거</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="step3-tab2" data-bs-toggle="tab" data-bs-target="#step3-tab2-pane" type="button" role="tab" aria-controls="step3-tab2-pane" aria-selected="false" tabindex="-1">확장 설비</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content tab-contrastCon" id="finalTabContent">
+                        <div class="tab-pane fade show active" id="step3-tab1-pane" role="tabpanel" aria-labelledby="step3-tab1" tabindex="0">
+                            <div class="contrastCon vertical">
+                                <div class="tit">
+                                    주방 1 (팀장 제출 원본)
+                                </div>
+                                <div class="itemList">
+                                    <div class="item">
+                                        <div class="name">
+                                            주방 타일 덧방
+                                            <!-- tooltip -->
+                                            <div class="infoToolTip">
+                                                <div class="infoMark"></div>
+                                                <div class="infoBx">
+                                                    <p class="infoMsg">주방 왼쪽 벽면 3000mm + 오른쪽 2200mm</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="price">
+                                            <div class="value">50,000원</div>
+                                        </div>
+                                        <div class="note">
+                                            <div class="value">50,000원 / 수량 : 1</div>
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                    <div class="item">
+                                        <div class="name">
+                                            주방 타일 덧방
+                                            <!-- tooltip -->
+                                            <div class="infoToolTip">
+                                                <div class="infoMark"></div>
+                                                <div class="infoBx">
+                                                    <p class="infoMsg">주방 왼쪽 벽면 3000mm + 오른쪽 2200mm주방 왼쪽 벽면 3000mm + 오른쪽 2200mm주방 왼쪽 벽면 3000mm + 오른쪽 2200mm 긴 설명글이 들어갔을때</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="price">
+                                            <div class="value">50,000원</div>
+                                        </div>
+                                        <div class="note">
+                                            <div class="value">50,000원 / 수량 : 1</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contrastCon vertical">
+                                <div class="tit">
+                                    주방 1 (팀장 제출 원본)
+                                </div>
+                                <div class="itemList">
+                                    <div class="item">
+                                        <div class="name">
+                                            주방 타일 덧방
+                                            <!-- tooltip -->
+                                            <div class="infoToolTip">
+                                                <div class="infoMark"></div>
+                                                <div class="infoBx">
+                                                    <p class="infoMsg">주방 왼쪽 벽면 3000mm + 오른쪽 2200mm주방 왼쪽 벽면 3000mm + 오른쪽 2200mm주방 왼쪽 벽면 3000mm + 오른쪽 2200mm 긴 설명글이 들어갔을때</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="price">
+                                            <div class="value">50,000원</div>
+                                        </div>
+                                        <div class="note">
+                                            <div class="value">50,000원 / 수량 : 1</div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="name">
+                                            주방 타일 덧방
+                                            <!-- tooltip -->
+                                            <div class="infoToolTip">
+                                                <div class="infoMark"></div>
+                                                <div class="infoBx">
+                                                    <p class="infoMsg">주방 왼쪽 벽면 3000mm + 오른쪽 2200mm주방 왼쪽 벽면 3000mm + 오른쪽 2200mm주방 왼쪽 벽면 3000mm + 오른쪽 2200mm 긴 설명글이 들어갔을때</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="price">
+                                            <div class="value">50,000원</div>
+                                        </div>
+                                        <div class="note">
+                                            <div class="value">50,000원 / 수량 : 1</div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footerWrap">
+                                <div>종합철거팀 총 합계</div>
+                                <div class="total">2,350,000원</div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="step3-tab2-pane" role="tabpanel" aria-labelledby="step3-tab2" tabindex="0">
+                            ...
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="absol">
+                <div class="sideCon" style="width: 320px;">
+                    <div class="tray vertical noTray">
+                        <div>
+                            <h2>서울시 강남구 청담동 134-38 청담자이 </h2>
+                            <p class="sub">철거일자 : 2023-11-09 (목) 09:00</p>
+                        </div>
+                        <h3>통합 청구서</h3>
+                        <div class="eachCostWrap">
+                            <div class="eachCost">
+                                <div class="flexWrap">
+                                    <div class="key">종합철거팀</div>
+                                </div>
+                                <div class="cost">2,350,000원</div>
+                            </div>
+                            <div class="eachCost">
+                                <div class="flexWrap">
+                                    <div class="key">확장설비팀</div>
+                                </div>
+                                <div class="cost">1,000,000원</div>
+                            </div>
+                            <div class="eachCost">
+                                <div class="flexWrap">
+                                    <div class="key">마루철거팀</div>
+                                </div>
+                                <div class="cost">500,000원</div>
+                            </div>
+                        </div>
+                        <div class="resultCost">
+                            <div>공급가: 3,850,000원</div>
+                            <div class="sub">+ 부가세 (10%): 385,000원</div>
+                            <div class="flexWrap">
+                                <div class="key">총 금액</div>
+                                <div class="value">4,235,000원</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div class="section--construct-list">
+    <div class="section--otherConstruct">
         <div class="inner">
-            <div class="searchModule">
-                <div class="item">
-                    <div class="label">시공 사례 타입</div>
-                    <div class="dropdown">
-                        <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">전체</button>
-                        <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">option</a></li>
-                        <li><a class="dropdown-item" href="#">option</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="item widthVariable">
-                    <div class="label">검색어 입력</div>
-                    <input class="input" placeholder="검색어 입력">
-                </div>
-        
-                <button class="btn-border">적용</button>
-            </div>
+            <h2>다른 현장도 둘러보세요</h2>
 
-            <ul class="gallery">
+            <ul class="gallery slick-gallery">
                 <li class="item">
                     <a href="constructDetail.html">
                         <div class="imgWrap">
@@ -180,58 +446,6 @@
                             <div class="tit">강남구 청담동 청담자이</div>
                             <div class="cate">
                                 <span class="span">#종합철거</span>
-                            </div>
-                            <div class="between">
-                                <div class="key">협력업체</div>
-                                <div class="value">웹에이블</div>
-                            </div>
-                            <div class="between">
-                                <div class="key">철거시작일</div>
-                                <div class="value">2024-07-01</div>
-                            </div>
-                            <div class="between">
-                                <div class="key">총 비용</div>
-                                <div class="value blue">220,000</div>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li class="item">
-                    <a href="constructDetail.html">
-                        <div class="imgWrap">
-                            <img src="./img/dummy.png" alt="thumb">
-                        </div>
-                        <div class="info">
-                            <div class="tit">강남구 청담동 청담자이</div>
-                            <div class="cate">
-                                <span class="span">#종합철거</span>
-                            </div>
-                            <div class="between">
-                                <div class="key">협력업체</div>
-                                <div class="value">웹에이블</div>
-                            </div>
-                            <div class="between">
-                                <div class="key">철거시작일</div>
-                                <div class="value">2024-07-01</div>
-                            </div>
-                            <div class="between">
-                                <div class="key">총 비용</div>
-                                <div class="value blue">220,000</div>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li class="item">
-                    <a href="constructDetail.html">
-                        <div class="imgWrap">
-                            <img src="./img/dummy.png" alt="thumb">
-                        </div>
-                        <div class="info">
-                            <div class="tit">강남구 청담동 청담자이</div>
-                            <div class="cate">
-                                <span class="span">#종합철거</span>
-                                <span class="span">##설비</span>
-                                <span class="span">#단품철거</span>
                             </div>
                             <div class="between">
                                 <div class="key">협력업체</div>
@@ -299,28 +513,8 @@
                     </a>
                 </li>
             </ul>
-
-            <nav aria-label="Page navigation">
-                <ul class="pagination">
-                <li class="page-item">
-                    <a class="page-link" href="#" aria-label="Previous">
-                    <span aria-hidden="true">«</span>
-                    </a>
-                </li>
-                <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item">
-                    <a class="page-link" href="#" aria-label="Next">
-                    <span aria-hidden="true">»</span>
-                    </a>
-                </li>
-                </ul>
-            </nav>
         </div>
     </div>
-
-
 
     <div class="module--cta">
         <div class="inner">
@@ -379,5 +573,60 @@
     </footer>
 
     <script src="./bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="./js/slick.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+
+            $('.slick-gallery').slick({
+                dots: false,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                responsive: [
+                    {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
+                    }
+                    },
+                    {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                    },
+                    {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                    }
+                    // You can unslick at a given breakpoint now by adding:
+                    // settings: "unslick"
+                    // instead of a settings object
+                ]
+                });
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            setTimeout(()=>{
+                $('.single-item').slick(
+                    {
+                        arrows: true,
+                    }
+                );
+            },3000)
+        });
+    </script>
 </body>
 </html>
