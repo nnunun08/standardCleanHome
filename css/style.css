@@ -2243,6 +2243,14 @@ footer .info .copyright {
   line-height: 150%; /* 21px */
   letter-spacing: -0.28px;
 }
+@media screen and (max-width: 425px) {
+  .constructInfo {
+    padding: 20px;
+  }
+  .constructInfo .infoSection {
+    flex-direction: column;
+  }
+}
 
 .chargeDetail .dualTray {
   display: flex;
@@ -2436,6 +2444,8 @@ footer .info .copyright {
   width: 100%;
 }
 .chargeDetail .tray .footerWrap {
+  gap: 10px;
+  flex-wrap: wrap;
   margin-top: 20px;
   display: flex;
   justify-content: space-between;
@@ -2669,6 +2679,34 @@ footer .info .copyright {
 }
 .chargeDetail .tray .contrastCon .itemList .item.append .statusBadge {
   background: var(--blueTone-blue6, #70A8F7);
+}
+@media screen and (max-width: 768px) {
+  .chargeDetail .tray .contrastCon .itemList .item {
+    padding-right: 0;
+    gap: 0;
+    background-color: var(--bgNormal, #F5F5F7);
+    padding: 4px 0;
+    border-radius: 8px;
+  }
+  .chargeDetail .tray .contrastCon .itemList .item + .item {
+    margin-top: 8px;
+  }
+  .chargeDetail .tray .contrastCon .itemList .item .name {
+    flex-basis: 100%;
+    padding: 7px 10px;
+    margin: 0;
+  }
+  .chargeDetail .tray .contrastCon .itemList .item .note,
+  .chargeDetail .tray .contrastCon .itemList .item .price {
+    flex: 0 0 auto;
+    width: auto;
+    padding: 7px 10px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .chargeDetail .tray {
+    padding: 20px;
+  }
 }
 
 .tab3 {

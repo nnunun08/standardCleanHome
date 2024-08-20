@@ -2312,7 +2312,12 @@ footer {
 			line-height: 150%; /* 21px */
 			letter-spacing: -0.28px;
 		}
-
+	}
+	@media screen and (max-width:425px) {
+		padding: 20px;
+		.infoSection {
+			flex-direction: column;
+		}
 	}
 }
 
@@ -2517,6 +2522,8 @@ footer {
 			width: 100%;
 		}
 		.footerWrap {
+			gap: 10px;
+			flex-wrap: wrap;
 			margin-top: 20px;
 			display: flex;
 			justify-content: space-between;
@@ -2722,8 +2729,36 @@ footer {
 					&.append {
 						.statusBadge {background: var(--blueTone-blue6, #70A8F7);}
 					}
+
+
+					@media screen and (max-width:768px) {
+						padding-right: 0;
+						gap: 0;
+						background-color: var(--bgNormal, #F5F5F7);
+						padding: 4px 0;
+						border-radius: 8px;
+						& + .item {
+							margin-top: 8px;
+						}
+						.name {
+							flex-basis: 100%;
+							padding: 7px 10px;
+							margin: 0;
+						}
+						.note,
+						.price {
+							flex: 0 0 auto;
+							width: auto;
+							padding: 7px 10px;
+						}
+					}
 				}
 			}
+		}
+	}
+	@media screen and (max-width:425px) {
+		.tray {
+			padding: 20px;
 		}
 	}
 }
