@@ -111,13 +111,15 @@
                     </div>
 
                     <div class="modal-body">
-                        <div class="single-item">
-                            <div><img src="./img/dummy.png" alt="img"></div>
-                            <div><img src="./img/dummy02.png" alt="img"></div>
-                            <div><img src="./img/dummy03.png" alt="img"></div>
-                            <div><img src="./img/dummy02.png" alt="img"></div>
-                            <div><img src="./img/dummy.png" alt="img"></div>
-                            <div><img src="./img/dummy03.png" alt="img"></div>
+                        <div class="loadingBx">
+                            <div class="single-item">
+                                <div class="imgWrap"><img src="./img/dummy.png" alt="img"></div>
+                                <div class="imgWrap"><img src="./img/dummy02.png" alt="img"></div>
+                                <div class="imgWrap"><img src="./img/dummy03.png" alt="img"></div>
+                                <div class="imgWrap"><img src="./img/dummy02.png" alt="img"></div>
+                                <div class="imgWrap"><img src="./img/dummy.png" alt="img"></div>
+                                <div class="imgWrap"><img src="./img/dummy03.png" alt="img"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -617,7 +619,7 @@
                 });
         });
     </script>
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
         $(document).ready(function(){
             setTimeout(()=>{
                 $('.single-item').slick(
@@ -627,6 +629,15 @@
                 );
             },3000)
         });
+    </script> -->
+    <script type="text/javascript">
+        setTimeout(()=>{
+            $('.single-item').slick(
+                {
+                    arrows: true,
+                }
+            );
+        },3000)
     </script>
 </body>
 </html>

@@ -2741,4 +2741,38 @@ footer .info .copyright {
   aspect-ratio: 1/1;
   background: url(../img/ic_gallary_slick_arr_r.svg) center no-repeat;
   text-indent: -9999px;
+}
+
+.imgSlideModal {
+  padding: 30px;
+}
+
+.modal2 .modal-content {
+  padding: 30px;
+}
+
+.imgSlideModal .slick-list {
+  height: 100%;
+}
+.imgSlideModal .single-item .imgWrap {
+  transition: 0.2s;
+  transition-delay: 1s;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 16/9;
+  max-width: 720px;
+  max-height: 420px;
+}
+.imgSlideModal .single-item .imgWrap img {
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.imgSlideModal.show .loadingBx {
+  background-color: transparent;
+}
+.imgSlideModal.show .single-item .imgWrap img {
+  opacity: 1;
 }/*# sourceMappingURL=style.css.map */
