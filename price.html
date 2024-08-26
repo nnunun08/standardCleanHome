@@ -20,8 +20,8 @@
         </a>
         <ul class="menu">
             <li><a href="index.html">철거의 기준</a></li>
-            <li><a href="construct.html" class="ac">시공사례</a></li>
-            <li><a href="price.html">단가표</a></li>
+            <li><a href="construct.html">시공사례</a></li>
+            <li><a href="price.html" class="ac">단가표</a></li>
             <li><a href="selfEstimate.html">셀프견적</a></li>
             <li><a href="#">현장등록</a></li>
             <li><a href="#">채용/교육</a></li>
@@ -48,8 +48,8 @@
     
                 <ul class="menu">
                     <li><a href="index.html">철거의 기준</a></li>
-                    <li><a href="construct.html" class="ac">시공사례</a></li>
-                    <li><a href="price.html">단가표</a></li>
+                    <li><a href="construct.html">시공사례</a></li>
+                    <li><a href="price.html" class="ac">단가표</a></li>
                     <li><a href="selfEstimate.html">셀프견적</a></li>
                     <li><a href="#">현장등록</a></li>
                     <li><a href="#">채용/교육</a></li>
@@ -67,256 +67,116 @@
         <script src="./js/mobileMenuToggle.js"></script>
     </div>
 
-    <div class="section--subVisual construct">
+    <div class="section--subVisual price">
         <div class="inner">
-            <div class="sub">시공사례</div>
-            <h2>철거의 기준이 만든 현장을 확인해 보세요</h2>
+            <div class="sub">단가표</div>
+            <h2>철거 단가 정찰제</h2>
         </div>
     </div>
 
-    <div class="section--construct-list">
+
+    <div class="section--price" style="padding-top: 80px;">
         <div class="inner">
-            <div class="searchModule">
-                <div class="item">
-                    <div class="label">시공 사례 타입</div>
-                    <div class="dropdown">
-                        <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">전체</button>
-                        <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">option</a></li>
-                        <li><a class="dropdown-item" href="#">option</a></li>
-                        </ul>
+            <div class="summary" style="margin-top: 0;">
+                <div class="left">
+                    <h3>기본 출장비</h3>
+                    <p>
+                        기본 출장비 초과분 부터 철거 비용 발생
+                    </p>
+
+                    <a class="linkArr" data-bs-toggle="modal" data-bs-target="#costMap">
+                        금액 확인
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.5 3L10.5 8L5.5 13" stroke="#1F79FF" stroke-width="1.5"></path>
+                        </svg>
+                    </a>
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="costMap" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    <img src="./img/img_mapCost.png" alt="cost map">
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    
                 </div>
-                <div class="item widthVariable">
-                    <div class="label">검색어 입력</div>
-                    <input class="input" placeholder="검색어 입력">
-                </div>
-        
-                <button class="btn-border">적용</button>
+                <ul>
+                    <li class="list">종합철거 기본출장비 100,000원</li>
+                    <li class="list">마루철거 기본출장비 100,000원</li>
+                    <li class="list">설비팀 기본 출장비 150,000원</li>
+                    <li class="list">당일 긴급 출장비 150,000원</li>
+                </ul>
             </div>
 
-            <ul class="gallery">
-                <li class="item">
-                    <a href="constructDetail.html">
-                        <div class="imgWrap">
-                            <img src="./img/dummy.png" alt="thumb">
-                        </div>
-                        <div class="info">
-                            <div class="tit">강남구 청담동 청담자이</div>
-                            <div class="cate">
-                                <span class="span">#종합철거</span>
-                            </div>
-                            <div class="between">
-                                <div class="key">협력업체</div>
-                                <div class="value">웹에이블</div>
-                            </div>
-                            <div class="between">
-                                <div class="key">철거시작일</div>
-                                <div class="value">2024-07-01</div>
-                            </div>
-                            <div class="between">
-                                <div class="key">총 비용</div>
-                                <div class="value blue">220,000</div>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li class="item">
-                    <a href="constructDetail.html">
-                        <div class="imgWrap">
-                            <img src="./img/dummy.png" alt="thumb">
-                        </div>
-                        <div class="info">
-                            <div class="tit">강남구 청담동 청담자이</div>
-                            <div class="cate">
-                                <span class="span">#종합철거</span>
-                            </div>
-                            <div class="between">
-                                <div class="key">협력업체</div>
-                                <div class="value">웹에이블</div>
-                            </div>
-                            <div class="between">
-                                <div class="key">철거시작일</div>
-                                <div class="value">2024-07-01</div>
-                            </div>
-                            <div class="between">
-                                <div class="key">총 비용</div>
-                                <div class="value blue">220,000</div>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li class="item">
-                    <a href="constructDetail.html">
-                        <div class="imgWrap">
-                            <img src="./img/dummy.png" alt="thumb">
-                        </div>
-                        <div class="info">
-                            <div class="tit">강남구 청담동 청담자이</div>
-                            <div class="cate">
-                                <span class="span">#종합철거</span>
-                            </div>
-                            <div class="between">
-                                <div class="key">협력업체</div>
-                                <div class="value">웹에이블</div>
-                            </div>
-                            <div class="between">
-                                <div class="key">철거시작일</div>
-                                <div class="value">2024-07-01</div>
-                            </div>
-                            <div class="between">
-                                <div class="key">총 비용</div>
-                                <div class="value blue">220,000</div>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li class="item">
-                    <a href="constructDetail.html">
-                        <div class="imgWrap">
-                            <img src="./img/dummy.png" alt="thumb">
-                        </div>
-                        <div class="info">
-                            <div class="tit">강남구 청담동 청담자이</div>
-                            <div class="cate">
-                                <span class="span">#종합철거</span>
-                            </div>
-                            <div class="between">
-                                <div class="key">협력업체</div>
-                                <div class="value">웹에이블</div>
-                            </div>
-                            <div class="between">
-                                <div class="key">철거시작일</div>
-                                <div class="value">2024-07-01</div>
-                            </div>
-                            <div class="between">
-                                <div class="key">총 비용</div>
-                                <div class="value blue">220,000</div>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li class="item">
-                    <a href="constructDetail.html">
-                        <div class="imgWrap">
-                            <img src="./img/dummy.png" alt="thumb">
-                        </div>
-                        <div class="info">
-                            <div class="tit">강남구 청담동 청담자이</div>
-                            <div class="cate">
-                                <span class="span">#종합철거</span>
-                            </div>
-                            <div class="between">
-                                <div class="key">협력업체</div>
-                                <div class="value">웹에이블</div>
-                            </div>
-                            <div class="between">
-                                <div class="key">철거시작일</div>
-                                <div class="value">2024-07-01</div>
-                            </div>
-                            <div class="between">
-                                <div class="key">총 비용</div>
-                                <div class="value blue">220,000</div>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li class="item">
-                    <a href="constructDetail.html">
-                        <div class="imgWrap">
-                            <img src="./img/dummy.png" alt="thumb">
-                        </div>
-                        <div class="info">
-                            <div class="tit">강남구 청담동 청담자이</div>
-                            <div class="cate">
-                                <span class="span">#종합철거</span>
-                                <span class="span">##설비</span>
-                                <span class="span">#단품철거</span>
-                            </div>
-                            <div class="between">
-                                <div class="key">협력업체</div>
-                                <div class="value">웹에이블</div>
-                            </div>
-                            <div class="between">
-                                <div class="key">철거시작일</div>
-                                <div class="value">2024-07-01</div>
-                            </div>
-                            <div class="between">
-                                <div class="key">총 비용</div>
-                                <div class="value blue">220,000</div>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li class="item">
-                    <a href="constructDetail.html">
-                        <div class="imgWrap">
-                            <img src="./img/dummy.png" alt="thumb">
-                        </div>
-                        <div class="info">
-                            <div class="tit">강남구 청담동 청담자이</div>
-                            <div class="cate">
-                                <span class="span">#종합철거</span>
-                            </div>
-                            <div class="between">
-                                <div class="key">협력업체</div>
-                                <div class="value">웹에이블</div>
-                            </div>
-                            <div class="between">
-                                <div class="key">철거시작일</div>
-                                <div class="value">2024-07-01</div>
-                            </div>
-                            <div class="between">
-                                <div class="key">총 비용</div>
-                                <div class="value blue">220,000</div>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li class="item">
-                    <a href="constructDetail.html">
-                        <div class="imgWrap">
-                            <img src="./img/dummy.png" alt="thumb">
-                        </div>
-                        <div class="info">
-                            <div class="tit">강남구 청담동 청담자이</div>
-                            <div class="cate">
-                                <span class="span">#종합철거</span>
-                            </div>
-                            <div class="between">
-                                <div class="key">협력업체</div>
-                                <div class="value">웹에이블</div>
-                            </div>
-                            <div class="between">
-                                <div class="key">철거시작일</div>
-                                <div class="value">2024-07-01</div>
-                            </div>
-                            <div class="between">
-                                <div class="key">총 비용</div>
-                                <div class="value blue">220,000</div>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-            </ul>
 
-            <nav aria-label="Page navigation">
-                <ul class="pagination">
-                <li class="page-item">
-                    <a class="page-link" href="#" aria-label="Previous">
-                    <span aria-hidden="true">«</span>
-                    </a>
-                </li>
-                <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item">
-                    <a class="page-link" href="#" aria-label="Next">
-                    <span aria-hidden="true">»</span>
-                    </a>
-                </li>
-                </ul>
-            </nav>
+            <div class="priceTable">
+                <div class="priceGroup">
+                    <h3>주방</h3>
+                    <div class="tableWrap">
+                        <div class="tableHead">
+                            <div class="tit">철거 구분</div>
+                            <div class="description">설명</div>
+                            <div class="price">금액</div>
+                        </div>
+                        <div class="tableRow">
+                            <div class="tit">본 주방 기본 6M 이내 [M]</div>
+                            <div class="description">
+                                <span class="normal">싱크대 상부사이즈 + 하부사이즈 6M이내 </span>
+                                <span class="point1">/ 아일랜드 / 보조주방 / 시공목 포함 사이즈 전부 동일</span>
+                            </div>
+                            <div class="price">12,000원</div>
+                        </div>
+                        <div class="tableRow">
+                            <div class="tit">{철거 구분}</div>
+                            <div class="description">
+                                <span class="normal">{철거 설명}</span>
+                                <span class="point1">{철거 설명2}</span>
+                                <span class="point2">{철거 설명3}</span>
+                            </div>
+                            <div class="price">{##,###}원</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="priceGroup">
+                    <h3>{철거 카테고리}</h3>
+                    <div class="tableWrap">
+                        <div class="tableHead">
+                            <div class="tit">철거 구분</div>
+                            <div class="description">설명</div>
+                            <div class="price">금액</div>
+                        </div>
+                        <div class="tableRow">
+                            <div class="tit">{철거 구분}</div>
+                            <div class="description">
+                                <span class="normal">{철거 설명}</span>
+                                <span class="point1">{철거 설명2}</span>
+                                <span class="point2">{철거 설명3}</span>
+                            </div>
+                            <div class="price">{##,###}원</div>
+                        </div>
+                        <div class="tableRow">
+                            <div class="tit">{철거 구분}</div>
+                            <div class="description">
+                                <span class="normal">{철거 설명}</span>
+                            </div>
+                            <div class="price">{##,###}원</div>
+                        </div>
+                        <div class="tableRow">
+                            <div class="tit">{철거 구분}</div>
+                            <div class="description">
+                                <span class="normal">{철거 설명}</span>
+                                <span class="point1">{철거 설명2}</span>
+                            </div>
+                            <div class="price">{##,###}원</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 

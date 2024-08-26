@@ -270,7 +270,7 @@ h2 {
     right: 0;
     background-color: #fff;
     width: 80vw;
-    height: 100%;
+    height: 100vh;
     max-width: 400px;
   }
   .gnb .hambur {
@@ -846,6 +846,103 @@ h2 {
     font-size: 14px;
   }
 }
+.section--price .priceTable .priceGroup {
+  margin-top: 80px;
+  text-align: left;
+}
+.section--price .priceTable .priceGroup h3 {
+  display: inline-block;
+  padding: 10px;
+  margin-bottom: 10px;
+  color: #222;
+  font-family: Pretendard;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 30px */
+  letter-spacing: -0.4px;
+}
+.section--price .priceTable .priceGroup .tableWrap {
+  width: 100%;
+  color: #636972;
+  font-family: Pretendard;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  letter-spacing: -0.32px;
+}
+.section--price .priceTable .priceGroup .tit {
+  padding: 10px;
+  text-align: left;
+  flex: 0 0 auto;
+  width: 214px;
+}
+.section--price .priceTable .priceGroup .description {
+  padding: 10px;
+  text-align: left;
+  flex: 1 0 0;
+}
+.section--price .priceTable .priceGroup .price {
+  width: 100px;
+  flex: 0 0 auto;
+  padding: 10px;
+  text-align: right;
+}
+.section--price .priceTable .priceGroup .tableHead {
+  display: flex;
+  background: #F4F6F9;
+  color: #222;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 24px */
+  letter-spacing: -0.32px;
+}
+.section--price .priceTable .priceGroup .tableRow {
+  display: flex;
+  border-bottom: 1px solid #D7D9DD;
+}
+.section--price .priceTable .priceGroup .tableRow .point1 {
+  color: #1F79FF;
+}
+.section--price .priceTable .priceGroup .tableRow .point2 {
+  color: #1FC795;
+}
+@media screen and (max-width: 768px) {
+  .section--price .priceTable .priceGroup h3 {
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+  .section--price .priceTable .priceGroup .tableWrap {
+    border-top: 1px solid #222;
+  }
+  .section--price .priceTable .priceGroup .tableHead {
+    display: none;
+  }
+  .section--price .priceTable .priceGroup .tableRow {
+    flex-wrap: wrap;
+    padding: 10px 0;
+  }
+  .section--price .priceTable .priceGroup .tableRow .description,
+  .section--price .priceTable .priceGroup .tableRow .tit,
+  .section--price .priceTable .priceGroup .tableRow .price {
+    flex: 1 0 100%;
+    text-align: left;
+    padding: 0;
+  }
+  .section--price .priceTable .priceGroup .tableRow .tit {
+    font-size: 16px;
+    font-weight: 600;
+    color: #222;
+  }
+  .section--price .priceTable .priceGroup .tableRow .price {
+    font-weight: 700;
+    margin-top: 4px;
+  }
+}
 
 .section--service {
   text-align: center;
@@ -1391,7 +1488,7 @@ footer .info {
   max-width: 600px;
 }
 footer .info .menu {
-  margin-bottom: 68px;
+  margin-bottom: 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1496,6 +1593,9 @@ footer .info .copyright {
   font-weight: 500;
   line-height: 150%; /* 48px */
   letter-spacing: -0.64px;
+}
+.section--subVisual.price {
+  background-image: url(../img/bg_sub_price.jpg);
 }
 
 .dropdown .dropdown-toggle {
@@ -3028,4 +3128,71 @@ footer .info .copyright {
 }
 .quickNav .goTop svg {
   width: 100%;
+}
+@media screen and (max-width: 425px) {
+  .quickNav {
+    display: none;
+  }
+}
+
+.selfEstimate .estimateBox .tray {
+  height: 800px;
+}
+
+.section--estimate {
+  padding-top: 160px;
+  margin-bottom: 80px;
+}
+.section--estimate .topWrap {
+  text-align: center;
+}
+.section--estimate .topWrap h3 {
+  margin-bottom: 15px;
+}
+.section--estimate .topWrap .linkArr.round {
+  border-radius: 40px;
+  background: #E9F2FE;
+  display: inline-flex;
+  padding: 13px 20px;
+  align-items: center;
+  gap: 7px;
+  color: #1F79FF;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 24px */
+  letter-spacing: -0.32px;
+  margin-bottom: 20px;
+}
+.section--estimate .estimateBox .nextCard {
+  margin-top: 26px;
+  border-radius: 12px;
+  background: var(--bgNormal, #F5F5F7);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  padding: 20px;
+  gap: 20px;
+  color: var(--greyScale-grey5, #686E7A);
+  font-family: Pretendard;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 27px */
+  letter-spacing: -0.54px;
+}
+.section--estimate .estimateBox .nextCard .linkArr {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: #1F79FF;
+  font-family: Pretendard;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 24px */
+  letter-spacing: -0.32px;
 }/*# sourceMappingURL=style.css.map */
