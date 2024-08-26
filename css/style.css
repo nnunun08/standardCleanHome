@@ -751,6 +751,30 @@ h2 {
 .section--price .summary .left {
   flex: 0 0 240px;
 }
+.section--price .summary .linkArr {
+  margin-top: 8px;
+  display: inline-flex;
+  align-items: center;
+  color: var(--primary, #1F79FF);
+  font-family: Pretendard;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 24px */
+  letter-spacing: -0.32px;
+}
+.section--price .summary #costMap .modal-body {
+  padding: 0;
+  position: relative;
+}
+.section--price .summary #costMap .modal-body .btn-close {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.section--price .summary #costMap .modal-body img {
+  width: 100%;
+}
 .section--price .summary h3 {
   color: #222;
   font-family: Pretendard;
@@ -2949,4 +2973,59 @@ footer .info .copyright {
     margin-right: -20px;
     width: calc(100% + 40px);
   }
+}
+
+.quickNav {
+  position: fixed;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+.quickNav svg {
+  display: inline-block;
+  width: 24px;
+}
+.quickNav .quickBtn {
+  width: 55px;
+  border-radius: 55px;
+  background-color: #292929;
+  padding: 10px 0;
+}
+.quickNav .quickBtn .erp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  color: #FFF;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 13px */
+  letter-spacing: -0.2px;
+}
+.quickNav .quickBtn .insta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+}
+.quickNav .quickBtn .blog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+}
+.quickNav .goTop {
+  display: block;
+  margin-top: 10px;
+  width: 55px;
+  height: 55px;
+}
+.quickNav .goTop svg {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
