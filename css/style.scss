@@ -3390,4 +3390,61 @@ footer {
 			}
 		}
 	}
+	@media screen and (max-width:1024px) {
+		.topWrap {
+			h3 {
+				padding: 0 20px;
+			}
+		}
+		.estimateBox {
+			padding: 0 10px;
+			.left {
+				padding-right: 0;
+				.tray {
+					flex-direction: column;
+					height: auto;
+					// padding: 10px 0;
+					box-shadow: none;
+					.cate {
+						flex: 0 0 auto;
+						border: 0;
+						// position: sticky;
+						// top: 80px;
+					}
+					.cate .nav {
+						flex-direction: row;
+						// height: auto;
+						overflow: auto;
+						background-color: #fff;
+						z-index: 2;
+					}
+					.gridTh {
+						display: none;
+					}
+				}
+				.estimateItemWrap {
+					.estimateItem {
+						flex-wrap: wrap;
+						border-bottom: 1px solid #f4f4f4;
+						padding: 10px;
+						gap: 8px;
+						.text {
+							flex: 1 0 100%;
+						}
+						.inputWrap {
+							flex: 0 0 34%;
+							order: 3;
+						}
+						.price {
+							flex: 1 0 0;
+							text-align: left;
+						}
+					}
+				}
+			}
+			.right {
+				display: none;
+			}
+		}
+	}
 }

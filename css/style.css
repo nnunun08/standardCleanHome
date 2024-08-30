@@ -3195,4 +3195,53 @@ footer .info .copyright {
   font-weight: 500;
   line-height: 150%; /* 24px */
   letter-spacing: -0.32px;
+}
+@media screen and (max-width: 1024px) {
+  .section--estimate .topWrap h3 {
+    padding: 0 20px;
+  }
+  .section--estimate .estimateBox {
+    padding: 0 10px;
+  }
+  .section--estimate .estimateBox .left {
+    padding-right: 0;
+  }
+  .section--estimate .estimateBox .left .tray {
+    flex-direction: column;
+    height: auto;
+    box-shadow: none;
+  }
+  .section--estimate .estimateBox .left .tray .cate {
+    flex: 0 0 auto;
+    border: 0;
+  }
+  .section--estimate .estimateBox .left .tray .cate .nav {
+    flex-direction: row;
+    overflow: auto;
+    background-color: #fff;
+    z-index: 2;
+  }
+  .section--estimate .estimateBox .left .tray .gridTh {
+    display: none;
+  }
+  .section--estimate .estimateBox .left .estimateItemWrap .estimateItem {
+    flex-wrap: wrap;
+    border-bottom: 1px solid #f4f4f4;
+    padding: 10px;
+    gap: 8px;
+  }
+  .section--estimate .estimateBox .left .estimateItemWrap .estimateItem .text {
+    flex: 1 0 100%;
+  }
+  .section--estimate .estimateBox .left .estimateItemWrap .estimateItem .inputWrap {
+    flex: 0 0 34%;
+    order: 3;
+  }
+  .section--estimate .estimateBox .left .estimateItemWrap .estimateItem .price {
+    flex: 1 0 0;
+    text-align: left;
+  }
+  .section--estimate .estimateBox .right {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
