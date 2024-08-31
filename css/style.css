@@ -296,6 +296,7 @@ h2 {
   }
   .gnb .mobileMenu.ac {
     display: block;
+    z-index: 12;
   }
   .gnb .mobileMenu .bamburClose {
     position: absolute;
@@ -3143,6 +3144,9 @@ footer .info .copyright {
   padding-top: 160px;
   margin-bottom: 80px;
 }
+.section--estimate .inner, .section--estimate .inner-full {
+  padding: 0 10px;
+}
 .section--estimate .topWrap {
   text-align: center;
 }
@@ -3196,15 +3200,12 @@ footer .info .copyright {
   line-height: 150%; /* 24px */
   letter-spacing: -0.32px;
 }
+.section--estimate .estimateBox .right .detailList {
+  display: none;
+}
 @media screen and (max-width: 1024px) {
-  .section--estimate .topWrap h3 {
-    padding: 0 20px;
-  }
-  .section--estimate .estimateBox {
-    padding: 0 10px;
-  }
   .section--estimate .estimateBox .left {
-    padding-right: 0;
+    min-height: 762px;
   }
   .section--estimate .estimateBox .left .tray {
     flex-direction: column;
@@ -3224,6 +3225,21 @@ footer .info .copyright {
   .section--estimate .estimateBox .left .tray .gridTh {
     display: none;
   }
+}
+@media screen and (max-width: 768px) {
+  .section--estimate .topWrap h3 {
+    padding: 0 20px;
+  }
+  .section--estimate .inner, .section--estimate .inner-full {
+    padding: 0;
+  }
+  .section--estimate .estimateBox .left {
+    padding: 0 10px;
+    padding-right: 0;
+  }
+  .section--estimate .estimateBox .left .tray {
+    box-shadow: none;
+  }
   .section--estimate .estimateBox .left .estimateItemWrap .estimateItem {
     flex-wrap: wrap;
     border-bottom: 1px solid #f4f4f4;
@@ -3242,6 +3258,59 @@ footer .info .copyright {
     text-align: left;
   }
   .section--estimate .estimateBox .right {
+    padding: 20px;
+    background: rgba(245, 245, 247, 0.8);
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+    position: fixed;
+    position: sticky;
+    left: 0;
+    width: 100%;
+    top: unset;
+    bottom: 0;
+    height: auto;
+    padding-top: 0;
+    border-top: 0.5px solid var(--greyScale-grey1);
+  }
+  .section--estimate .estimateBox .right .detailList {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+  }
+  .section--estimate .estimateBox .right .detailList svg {
+    width: 21px;
+    height: 21px;
+  }
+  .section--estimate .estimateBox .right .detailList path {
+    stroke: #23262A;
+  }
+  .section--estimate .estimateBox .right .detailList svg {
+    transform: rotate(-90deg);
+  }
+  .section--estimate .estimateBox .right .insert input {
+    flex: 1 0 0;
+  }
+  .section--estimate .estimateBox .right .top,
+  .section--estimate .estimateBox .right .resultList {
     display: none;
+  }
+  .section--estimate .estimateBox .right .resultList {
+    height: 300px;
+  }
+  .section--estimate .estimateBox .right .nextCard {
+    display: none;
+  }
+  .section--estimate .estimateBox .right.ac {
+    z-index: 11;
+  }
+  .section--estimate .estimateBox .right.ac .top,
+  .section--estimate .estimateBox .right.ac .resultList {
+    display: block;
+  }
+  .section--estimate .estimateBox .right.ac .detailList svg {
+    transform: rotate(90deg);
   }
 }/*# sourceMappingURL=style.css.map */

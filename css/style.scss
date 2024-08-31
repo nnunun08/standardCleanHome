@@ -493,6 +493,7 @@ h2 {
 			display: none;
 			&.ac {
 				display: block;
+				z-index: 12;
 			}
 			.bamburClose {
 				position: absolute;
@@ -3335,6 +3336,9 @@ footer {
 .section--estimate {
 	padding-top: 160px;
 	margin-bottom: 80px;
+	.inner {
+		padding: 0 10px;
+	}
 	.topWrap {
 		text-align: center;
 		h3 {
@@ -3389,17 +3393,19 @@ footer {
 				letter-spacing: -0.32px;
 			}
 		}
-	}
-	@media screen and (max-width:1024px) {
-		.topWrap {
-			h3 {
-				padding: 0 20px;
+		.right {
+			.detailList {
+				display: none;
 			}
 		}
+	}
+	@media screen and (max-width:1024px) {
+		.inner {
+			
+		}
 		.estimateBox {
-			padding: 0 10px;
 			.left {
-				padding-right: 0;
+				min-height: 762px;
 				.tray {
 					flex-direction: column;
 					height: auto;
@@ -3422,6 +3428,26 @@ footer {
 						display: none;
 					}
 				}
+			}
+		}
+	}
+	@media screen and (max-width:768px) {
+		.topWrap {
+			h3 {
+				padding: 0 20px;
+			}
+		}
+		.inner {
+			padding: 0;
+		}
+		.estimateBox {
+			.left {
+				padding: 0 10px;
+				padding-right: 0;
+				.tray {
+					box-shadow: none;
+				}
+				
 				.estimateItemWrap {
 					.estimateItem {
 						flex-wrap: wrap;
@@ -3443,7 +3469,76 @@ footer {
 				}
 			}
 			.right {
-				display: none;
+				// display: none;
+				// box-shadow: 0px 4px 32px 0px var(--boxShadow);
+				padding: 20px;
+				// background: rgb(244 244 244 / 80%);
+				background: rgb(245 245 247 / 80%);
+				backdrop-filter: blur(10px);
+				// border-radius: 16px;
+				position: fixed;
+				position: sticky;
+				left: 0;
+				width: 100%;
+				top: unset;
+				bottom: 0;
+				height: auto;
+				padding-top: 0;
+				border-top: 0.5px solid var(--greyScale-grey1);
+				.detailList {
+					// position: absolute;
+					// top: -17px;
+					// left: 50%;
+					// transform: translateX(-50%);
+					// box-shadow: 0px 4px 32px 0px var(--boxShadow);
+					svg {
+						width: 21px;
+						height: 21px;
+					}
+					path {
+						stroke: #23262A;
+					}
+					margin: 0 auto;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					width: 32px;
+					height: 32px;
+					// border-radius: 50%;
+					// background-color: #fff;
+					// background-color: var(--greyScale-grey8, #DEE1E8);
+					svg {
+						transform: rotate(-90deg);
+					}
+				}	
+				
+				.insert input {
+					flex: 1 0 0;
+				}
+
+				.top,
+				.resultList {
+					display: none;
+				}
+				.resultList {
+					height: 300px;
+				}
+				.nextCard {
+					display: none;
+				}
+				&.ac {
+					z-index: 11;
+					.top,
+					.resultList {
+						display: block;
+					}
+
+					.detailList {
+						svg {
+							transform: rotate(90deg);
+						}
+					}	
+				}
 			}
 		}
 	}

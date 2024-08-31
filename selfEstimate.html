@@ -309,6 +309,13 @@
                     </div>
                 </div>
                 <div class="right">
+
+                    <span class="linkArr detailList" onclick="detailToggle()">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.5 3L10.5 8L5.5 13" stroke="#1F79FF" stroke-width="1.5"/>
+                        </svg>
+                    </span>
+
                     <div class="top">
                         <div class="tit">예상 견적</div>
                         <div class="insert">
@@ -378,7 +385,9 @@
                         </div>
                         <div class="divider"></div>
                         <div class="totalResult">
-                            <div class="key">최종 견적</div>
+                            <div class="key">
+                                <span>최종 견적</span>
+                            </div>
                             <div class="value">1,848,000원</div>
                         </div>
                     </div>
@@ -392,6 +401,13 @@
                             </svg>
                         </a>
                     </div>
+
+                    <script>
+                        const detailList = document.querySelector('.estimateBox .right')
+                        const detailToggle = () => {
+                            detailList.classList.toggle('ac')
+                        }
+                    </script>
                 </div>
             </div>
         </div>
