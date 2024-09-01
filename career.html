@@ -71,8 +71,8 @@
         <div class="inner">
             <nav>
                 <div class="nav nav-tabs" id="careerTab" role="tablist">
-                  <button class="nav-link active" id="nav-career-tab" data-bs-toggle="tab" data-bs-target="#nav-career" type="button" role="tab" aria-controls="nav-career" aria-selected="true">채용</button>
-                  <button class="nav-link" id="nav-education-tab" data-bs-toggle="tab" data-bs-target="#nav-education" type="button" role="tab" aria-controls="nav-education" aria-selected="false">교육</button>
+                  <button class="nav-link active" id="nav-career-tab" data-bs-toggle="tab" data-bs-target="#nav-career" type="button" role="tab" aria-controls="nav-career" aria-selected="true" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">채용</button>
+                  <button class="nav-link" id="nav-education-tab" data-bs-toggle="tab" data-bs-target="#nav-education" type="button" role="tab" aria-controls="nav-education" aria-selected="false" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">교육</button>
                 </div>
             </nav>
         </div>
@@ -82,7 +82,7 @@
             <div class="tab-pane fade show active" id="nav-career" role="tabpanel" aria-labelledby="nav-career-tab" tabindex="0">
                 <div class="summary">
                     <div class="inner">
-                        <div class="card">
+                        <div class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
                             <div class="flex">
                                 <h2>현장직</h2>
                                 <span class="rBadge">상시채용</span>
@@ -96,7 +96,7 @@
                                 <em>( 현장에서 교육평가 우수등급시 조기 전환가능 )</em>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
                             <div class="flex">
                                 <h2>사무직</h2>
                                 <span class="rBadge">경력직 채용</span>
@@ -116,7 +116,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="inner">
+                <div class="inner" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700">
                     <div class="dualWrap">
                         <div class="left">
                             <h3 style="margin-top: 0;">근무형태 (선택 후 협의)</h3>
@@ -349,10 +349,10 @@
         <div class="inner">
             <h3>지금 바로 확인해 보세요!</h3>
             <div class="linkWrap">
-                <a href="#">
+                <a href="./selfEstimate.html">
                     셀프 견적 확인하기
                 </a>
-                <a href="#">
+                <a href="./site.html">
                     현장 등록 바로가기
                 </a>
             </div>
@@ -439,5 +439,8 @@
     </div>
 
     <script src="./bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
