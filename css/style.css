@@ -2,6 +2,12 @@
 @import url(./reset.css);
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard-dynamic-subset.css");
 @import url(./erpCss.css);
+@font-face {
+  font-family: "Paperlogy";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-8ExtraBold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+}
 :root {
   --primary: #1F79FF;
   --num-4: 4px;
@@ -4155,4 +4161,433 @@ footer .info .copyright {
   font-weight: 700;
   line-height: 150%; /* 27px */
   letter-spacing: -0.36px;
+}
+
+.section--aboutCover {
+  padding: 190px 0 130px;
+  background-color: #F6F7F8;
+  text-align: center;
+}
+.section--aboutCover .inner, .section--aboutCover .inner-full {
+  max-width: 1240px;
+  padding: 0 20px;
+}
+.section--aboutCover h1 {
+  color: #969EA9;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 45px */
+  letter-spacing: -0.6px;
+  margin-bottom: 26px;
+}
+.section--aboutCover svg {
+  margin-bottom: 90px;
+  max-width: 80vw;
+}
+.section--aboutCover .cover {
+  max-width: 980px;
+  width: 70vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  margin: 0 auto;
+}
+.section--aboutCover .cover p {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  text-align: left;
+  color: #222;
+  font-family: Pretendard;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 48px */
+  letter-spacing: -0.64px;
+}
+.section--aboutCover .cover .imgWrap {
+  position: relative;
+  height: 50vw;
+  max-height: 668px;
+  aspect-ratio: 575/688;
+}
+.section--aboutCover .cover .imgWrap img {
+  height: 100%;
+}
+.section--aboutCover .cover .imgWrap::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(270deg, rgba(246, 247, 248, 0) 49.91%, #F6F7F8 100%);
+}
+@media screen and (max-width: 1024px) {
+  .section--aboutCover .cover {
+    max-width: 100%;
+    width: 90vw;
+  }
+  .section--aboutCover .cover p {
+    font-size: 3vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section--aboutCover {
+    padding: 160px 0 130px;
+  }
+  .section--aboutCover h1 {
+    margin-bottom: 0;
+  }
+  .section--aboutCover svg {
+    margin-bottom: 8%;
+  }
+  .section--aboutCover .cover {
+    width: 100%;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 0;
+  }
+  .section--aboutCover .cover p {
+    position: static;
+    transform: unset;
+    margin-bottom: 40px;
+    font-size: 18px;
+  }
+  .section--aboutCover .cover .imgWrap {
+    width: 100%;
+    aspect-ratio: unset;
+  }
+  .section--aboutCover .cover .imgWrap img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .section--aboutCover .cover .imgWrap::before {
+    display: none;
+  }
+}
+
+.Paperlogy {
+  color: #1E1E1E;
+  font-family: Paperlogy;
+  font-family: "Paperlogy-8ExtraBold";
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 150%; /* 63px */
+}
+
+.section--owner {
+  padding: 120px 0;
+}
+.section--owner .inner, .section--owner .inner-full {
+  max-width: 1240px;
+  padding: 0 20px;
+}
+.section--owner h2 {
+  margin-bottom: 45px;
+}
+.section--owner .flex {
+  display: flex;
+  align-items: stretch;
+  gap: 2%;
+}
+.section--owner .flex .item {
+  flex: 1 0 0;
+  border: 1px solid var(--outline, #E7E5ED);
+  background: var(--bgWhite, #FFF);
+  /* boxshadow */
+  box-shadow: 0px 4px 32px 0px var(--boxShadow, rgba(171, 163, 194, 0.2));
+}
+.section--owner .flex .item .imgWrap {
+  aspect-ratio: 388/294;
+  width: 100%;
+}
+.section--owner .flex .item .imgWrap img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.section--owner .flex .item .conBody {
+  padding: 10%;
+}
+.section--owner .flex .item .conBody .name {
+  color: #222;
+  font-family: Pretendard;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 48px */
+  letter-spacing: -0.64px;
+}
+.section--owner .flex .item .conBody .position {
+  color: #1F79FF;
+  font-family: Pretendard;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 24px */
+  letter-spacing: -0.32px;
+  margin-bottom: 20px;
+}
+.section--owner .flex .item .conBody .list {
+  color: #222;
+  font-family: Pretendard;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 21px */
+  letter-spacing: -0.28px;
+}
+@media screen and (max-width: 768px) {
+  .section--owner .flex {
+    flex-wrap: wrap;
+  }
+  .section--owner .flex .item {
+    width: 49%;
+    flex: 0 0 auto;
+    margin-bottom: 2%;
+  }
+  .section--owner .flex .item .conBody {
+    padding: 8%;
+  }
+  .section--owner .flex .item .conBody .name {
+    font-size: 21px;
+    line-height: 1.2;
+  }
+}
+
+.section--vision {
+  padding: 240px 0;
+  background: url(../img/bg_vision.png) center/cover no-repeat;
+}
+.section--vision .inner, .section--vision .inner-full {
+  max-width: 1240px;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+.section--vision .inner h2, .section--vision .inner-full h2 {
+  color: #fff;
+  margin: 0;
+}
+.section--vision .inner h3, .section--vision .inner-full h3 {
+  color: #FFF;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 48px */
+  letter-spacing: -0.64px;
+}
+.section--vision .inner h4, .section--vision .inner-full h4 {
+  color: #FFF;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 31.5px */
+  letter-spacing: -0.42px;
+}
+@media screen and (max-width: 768px) {
+  .section--vision {
+    padding: 160px 0;
+  }
+  .section--vision .inner h3, .section--vision .inner-full h3 {
+    font-size: 21px;
+  }
+  .section--vision .inner h4, .section--vision .inner-full h4 {
+    font-size: 16px;
+  }
+}
+
+.section--certification {
+  padding: 140px 0;
+}
+.section--certification .inner, .section--certification .inner-full {
+  max-width: 1240px;
+  padding: 0 20px;
+}
+.section--certification .flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%;
+}
+.section--certification .flex .item {
+  margin-bottom: 2%;
+  flex: 0 0 auto;
+  width: 32%;
+  border: 1px solid var(--outline, #E7E5ED);
+  background: var(--bgWhite, #FFF);
+  /* boxshadow */
+  box-shadow: 0px 4px 32px 0px var(--boxShadow, rgba(171, 163, 194, 0.2));
+}
+.section--certification .flex .item .imgWrap {
+  aspect-ratio: 210/297;
+  width: 100%;
+}
+.section--certification .flex .item .imgWrap img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.section--certification .flex .item .conBody {
+  padding: 10%;
+}
+.section--certification .flex .item .conBody .name {
+  color: #222;
+  font-family: Pretendard;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 31.5px */
+  letter-spacing: -0.42px;
+}
+@media screen and (max-width: 768px) {
+  .section--certification .flex .item {
+    width: 49%;
+  }
+  .section--certification .flex .item .conBody {
+    padding: 8%;
+  }
+  .section--certification .flex .item .conBody .name {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+}
+
+.section--history {
+  padding: 90px 0 0;
+  background-color: #F6F7F8;
+  text-align: center;
+}
+.section--history .inner, .section--history .inner-full {
+  max-width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+.section--history .conWrap {
+  margin-left: 50%;
+  border-left: 2px solid #E7E7E7;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.section--history .conWrap .itemWrap {
+  position: relative;
+  margin-bottom: 60px;
+}
+.section--history .conWrap .itemWrap svg {
+  position: absolute;
+  top: 46px;
+  left: 0;
+  transform: translateX(-50%);
+}
+.section--history .conWrap .item {
+  padding: 0 53px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  transform: translateX(-100%);
+}
+.section--history .conWrap .year {
+  color: #222;
+  font-family: Pretendard;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 108px */
+  letter-spacing: -1.44px;
+}
+.section--history .conWrap .listWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.section--history .conWrap .list {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+.section--history .conWrap .month {
+  color: #1F79FF;
+  font-family: Pretendard;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -0.48px;
+  flex: 0 0 auto;
+}
+.section--history .conWrap .desc {
+  color: #999;
+  text-align: right;
+  font-family: Pretendard;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -0.48px;
+}
+.section--history .conWrap .itemWrap:nth-child(2n) .item {
+  transform: translateX(0);
+  align-items: flex-start;
+}
+.section--history .conWrap .itemWrap:nth-child(2n) .list {
+  justify-content: flex-start;
+}
+.section--history .conWrap .itemWrap:nth-child(2n) .desc {
+  text-align: left;
+}
+@media screen and (max-width: 1024px) {
+  .section--history {
+    text-align: left;
+  }
+  .section--history .conWrap {
+    margin-left: 20px;
+  }
+  .section--history .conWrap .year {
+    font-size: 52px;
+  }
+  .section--history .conWrap .itemWrap svg {
+    top: 30px;
+  }
+  .section--history .conWrap .itemWrap .item {
+    transform: translateX(0);
+    align-items: flex-start;
+    padding: 0;
+    padding-left: 30px;
+  }
+  .section--history .conWrap .itemWrap .list {
+    justify-content: flex-start;
+  }
+  .section--history .conWrap .itemWrap .desc {
+    text-align: left;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section--history .conWrap .year {
+    font-size: 38px;
+  }
+  .section--history .conWrap .itemWrap svg {
+    top: 21px;
+  }
 }/*# sourceMappingURL=style.css.map */
