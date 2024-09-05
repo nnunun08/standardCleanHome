@@ -3507,6 +3507,10 @@ footer {
 						overflow: auto;
 						background-color: #fff;
 						z-index: 2;
+						flex-wrap: nowrap;
+						.nav-item {
+							flex: 0 0 auto;
+						}
 					}
 					.gridTh {
 						display: none;
