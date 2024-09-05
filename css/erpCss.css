@@ -5037,13 +5037,13 @@ h2 {
   width: 100%;
 }
 .selfEstimate .estimateBox .left {
-  padding-right: 300px;
+  padding-right: 350px;
 }
 .selfEstimate .estimateBox .right {
   position: absolute;
   top: 0;
   right: 0;
-  width: 280px;
+  width: 330px;
   min-height: 1px;
 }
 .selfEstimate .estimateBox .tray {
@@ -5107,7 +5107,7 @@ h2 {
   text-align: right;
 }
 .selfEstimate .estimateBox .tray .content .gridTh > div:nth-child(3) {
-  flex: 0 0 100px;
+  flex: 0 0 30px;
   text-align: right;
 }
 .selfEstimate .estimateBox .tray .content .gridTh > div:nth-child(4) {

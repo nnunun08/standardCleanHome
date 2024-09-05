@@ -115,66 +115,81 @@
 
             <div class="priceTable">
                 <div class="priceGroup">
-                    <h3>주방</h3>
-                    <div class="tableWrap">
-                        <div class="tableHead">
-                            <div class="tit">철거 구분</div>
-                            <div class="description">설명</div>
-                            <div class="price">금액</div>
-                        </div>
-                        <div class="tableRow">
-                            <div class="tit">본 주방 기본 6M 이내 [M]</div>
-                            <div class="description">
-                                <span class="normal">싱크대 상부사이즈 + 하부사이즈 6M이내 </span>
-                                <span class="point1">/ 아일랜드 / 보조주방 / 시공목 포함 사이즈 전부 동일</span>
+                    <ul class="nav nav-pills" id="priceTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <h3 class="nav-link active" id="price01-tab" data-bs-toggle="pill" data-bs-target="#price01" type="button" role="tab" aria-controls="price01" aria-selected="true">
+                            Home
+                          </h3>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <h3 class="nav-link" id="price02-tab" data-bs-toggle="pill" data-bs-target="#price02" type="button" role="tab" aria-controls="price02" aria-selected="false">
+                            {철거 카테고리}
+                          </h3>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="priceTabContent">
+                        <div class="tab-pane fade show active" id="price01" role="tabpanel" aria-labelledby="price01-tab" tabindex="0">
+                            <div class="tableWrap">
+                                <div class="tableHead">
+                                    <div class="tit">철거 구분</div>
+                                    <div class="description">설명</div>
+                                    <div class="price">금액</div>
+                                </div>
+                                <div class="tableRow">
+                                    <div class="tit">본 주방 기본 6M 이내 [M]</div>
+                                    <div class="description">
+                                        <span class="normal">싱크대 상부사이즈 + 하부사이즈 6M이내 </span>
+                                        <span class="point1">/ 아일랜드 / 보조주방 / 시공목 포함 사이즈 전부 동일</span>
+                                    </div>
+                                    <div class="price">12,000원</div>
+                                </div>
+                                <div class="tableRow">
+                                    <div class="tit">{철거 구분}</div>
+                                    <div class="description">
+                                        <span class="normal">{철거 설명}</span>
+                                        <span class="point1">{철거 설명2}</span>
+                                        <span class="point2">{철거 설명3}</span>
+                                    </div>
+                                    <div class="price">{##,###}원</div>
+                                </div>
                             </div>
-                            <div class="price">12,000원</div>
                         </div>
-                        <div class="tableRow">
-                            <div class="tit">{철거 구분}</div>
-                            <div class="description">
-                                <span class="normal">{철거 설명}</span>
-                                <span class="point1">{철거 설명2}</span>
-                                <span class="point2">{철거 설명3}</span>
+                        <div class="tab-pane fade" id="price02" role="tabpanel" aria-labelledby="price02-tab" tabindex="0">
+                            <div class="tableWrap">
+                                <div class="tableHead">
+                                    <div class="tit">철거 구분</div>
+                                    <div class="description">설명</div>
+                                    <div class="price">금액</div>
+                                </div>
+                                <div class="tableRow">
+                                    <div class="tit">{철거 구분}</div>
+                                    <div class="description">
+                                        <span class="normal">{철거 설명}</span>
+                                        <span class="point1">{철거 설명2}</span>
+                                        <span class="point2">{철거 설명3}</span>
+                                    </div>
+                                    <div class="price">{##,###}원</div>
+                                </div>
+                                <div class="tableRow">
+                                    <div class="tit">{철거 구분}</div>
+                                    <div class="description">
+                                        <span class="normal">{철거 설명}</span>
+                                    </div>
+                                    <div class="price">{##,###}원</div>
+                                </div>
+                                <div class="tableRow">
+                                    <div class="tit">{철거 구분}</div>
+                                    <div class="description">
+                                        <span class="normal">{철거 설명}</span>
+                                        <span class="point1">{철거 설명2}</span>
+                                    </div>
+                                    <div class="price">{##,###}원</div>
+                                </div>
                             </div>
-                            <div class="price">{##,###}원</div>
                         </div>
                     </div>
                 </div>
-                <div class="priceGroup">
-                    <h3>{철거 카테고리}</h3>
-                    <div class="tableWrap">
-                        <div class="tableHead">
-                            <div class="tit">철거 구분</div>
-                            <div class="description">설명</div>
-                            <div class="price">금액</div>
-                        </div>
-                        <div class="tableRow">
-                            <div class="tit">{철거 구분}</div>
-                            <div class="description">
-                                <span class="normal">{철거 설명}</span>
-                                <span class="point1">{철거 설명2}</span>
-                                <span class="point2">{철거 설명3}</span>
-                            </div>
-                            <div class="price">{##,###}원</div>
-                        </div>
-                        <div class="tableRow">
-                            <div class="tit">{철거 구분}</div>
-                            <div class="description">
-                                <span class="normal">{철거 설명}</span>
-                            </div>
-                            <div class="price">{##,###}원</div>
-                        </div>
-                        <div class="tableRow">
-                            <div class="tit">{철거 구분}</div>
-                            <div class="description">
-                                <span class="normal">{철거 설명}</span>
-                                <span class="point1">{철거 설명2}</span>
-                            </div>
-                            <div class="price">{##,###}원</div>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
 
         </div>

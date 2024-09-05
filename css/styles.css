@@ -857,7 +857,14 @@ h2 {
   margin-top: 80px;
   text-align: left;
 }
-.section--price .priceTable .priceGroup h3 {
+.section--price .priceTable .priceGroup .nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  overflow: auto;
+}
+.section--price .priceTable .priceGroup .nav h3 {
+  opacity: 0.3;
   display: inline-block;
   padding: 10px;
   margin-bottom: 10px;
@@ -868,6 +875,14 @@ h2 {
   font-weight: 700;
   line-height: 150%; /* 30px */
   letter-spacing: -0.4px;
+  background-color: transparent;
+}
+.section--price .priceTable .priceGroup .nav h3.active {
+  opacity: 1;
+}
+.section--price .priceTable .priceGroup .nav .nav-item {
+  flex: 0 0 auto;
+  white-space: nowrap;
 }
 .section--price .priceTable .priceGroup .tableWrap {
   width: 100%;
@@ -3138,7 +3153,7 @@ footer .info .copyright {
 .quickNav .goTop svg {
   width: 100%;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 1360px) {
   .quickNav {
     display: none;
   }
@@ -3146,6 +3161,18 @@ footer .info .copyright {
 
 .selfEstimate .estimateBox .tray {
   height: 800px;
+}
+.selfEstimate .estimateBox .estimateItemWrap .estimateItem > div:nth-child(3) {
+  flex: 0 0 30px;
+}
+.selfEstimate .estimateBox .estimateItemWrap .estimateItem .rowPlus {
+  display: flex;
+  align-items: center;
+}
+.selfEstimate .estimateBox .estimateItemWrap .estimateItem .rowPlus button {
+  border: 0;
+  background-color: transparent;
+  padding: 0;
 }
 
 .section--estimate {
@@ -3258,12 +3285,15 @@ footer .info .copyright {
     flex: 1 0 100%;
   }
   .section--estimate .estimateBox .left .estimateItemWrap .estimateItem .inputWrap {
-    flex: 0 0 34%;
-    order: 3;
+    flex: 0 0 50%;
   }
-  .section--estimate .estimateBox .left .estimateItemWrap .estimateItem .price {
-    flex: 1 0 0;
-    text-align: left;
+  .section--estimate .estimateBox .left .estimateItemWrap .estimateItem .rowPlus {
+    flex: 0 0 auto;
+    gap: 4px;
+  }
+  .section--estimate .estimateBox .left .estimateItemWrap .estimateItem .rowPlus::after {
+    content: "추가";
+    color: var(--primary);
   }
   .section--estimate .estimateBox .right {
     padding: 20px;
@@ -3298,8 +3328,13 @@ footer .info .copyright {
   .section--estimate .estimateBox .right .detailList svg {
     transform: rotate(-90deg);
   }
-  .section--estimate .estimateBox .right .insert input {
+  .section--estimate .estimateBox .right .insert .caption {
     flex: 1 0 0;
+  }
+  .section--estimate .estimateBox .right .insert input {
+    flex: 0 0 90px;
+    text-align: right;
+    padding-left: 10px;
   }
   .section--estimate .estimateBox .right .top,
   .section--estimate .estimateBox .right .resultList {

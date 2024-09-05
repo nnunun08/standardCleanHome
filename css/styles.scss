@@ -1224,17 +1224,32 @@ h2 {
 		.priceGroup {
 			margin-top: 80px;
 			text-align: left;
-			h3 {
-				display: inline-block;
-				padding: 10px;
-				margin-bottom: 10px;
-				color: #222;
-				font-family: Pretendard;
-				font-size: 20px;
-				font-style: normal;
-				font-weight: 700;
-				line-height: 150%; /* 30px */
-				letter-spacing: -0.4px;
+			.nav {
+				display: flex;
+				align-items: center;
+				flex-wrap: nowrap;
+				overflow: auto;
+				h3 {
+					opacity: 0.3;
+					display: inline-block;
+					padding: 10px;
+					margin-bottom: 10px;
+					color: #222;
+					font-family: Pretendard;
+					font-size: 20px;
+					font-style: normal;
+					font-weight: 700;
+					line-height: 150%; /* 30px */
+					letter-spacing: -0.4px;
+					background-color: transparent;
+					&.active {
+						opacity: 1;
+					}
+				}
+				.nav-item {
+					flex: 0 0 auto;
+					white-space: nowrap;
+				}
 			}
 			.tableWrap {
 				width: 100%;
@@ -3378,14 +3393,29 @@ footer {
 		// background-color: #292929;
 		// text-indent: -9999px;
 	}
-	@media screen and (max-width:425px) {
+	@media screen and (max-width:1360px) {
 		display: none;
 	}
 }
 
-
-.selfEstimate .estimateBox .tray {
-	height: 800px;
+.selfEstimate .estimateBox {
+	.tray {
+		height: 800px; 
+	}
+	.estimateItemWrap .estimateItem {
+		> div:nth-child(3) {
+			flex: 0 0 30px;
+		}
+		.rowPlus {
+			display: flex;
+			align-items: center;
+			button {
+				border: 0;
+				background-color: transparent;
+				padding: 0;
+			}
+		}
+	}
 }
 .section--estimate {
 	padding-top: 160px;
@@ -3512,12 +3542,16 @@ footer {
 							flex: 1 0 100%;
 						}
 						.inputWrap {
-							flex: 0 0 34%;
-							order: 3;
+							flex: 0 0 50%;
+							// order: 3;
 						}
-						.price {
-							flex: 1 0 0;
-							text-align: left;
+						.rowPlus {
+							flex: 0 0 auto;
+							gap: 4px;
+							&::after {
+								content: '추가';
+								color: var(--primary);
+							}
 						}
 					}
 				}
@@ -3565,9 +3599,13 @@ footer {
 						transform: rotate(-90deg);
 					}
 				}	
-				
-				.insert input {
+				.insert .caption {
 					flex: 1 0 0;
+				}
+				.insert input {
+					flex: 0 0 90px;
+					text-align: right;
+					padding-left: 10px;
 				}
 
 				.top,
