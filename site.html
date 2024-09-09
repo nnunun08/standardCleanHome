@@ -518,7 +518,7 @@
                         </div>
 
                         <div class="btnWrap">
-                            <div class="nextBtn" data-bs-toggle="modal" data-bs-target="#jump">
+                            <div class="nextBtn" id="nextBtn4" data-bs-toggle="modal" data-bs-target="#jump">
                                 다음
                                 <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M9.5 1.5L17 9M17 9L9.5 16.5M17 9H0.5" stroke="white" stroke-width="1.5"/>
@@ -526,50 +526,58 @@
                             </div>
                         </div>
                         
-                        <!-- Modal -->
-                        <div class="modal fade gotoLogin" id="jump" tabindex="-1" aria-labelledby="jumpLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="jumpLabel">
-                                    로그인 후 이어서 <br>
-                                    현장 등록을 완료할 수 있습니다.
-                                </h1>
-                                <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
-                                </div>
-                                <div class="modal-body">
-                                    계속 진행하기 위해서 로그인/회원가입이 필요합니다. <br>
-                                    로그인 후 진행해주세요.
-                                </div>
-                                <div class="modal-footer">
-                                <a type="button" class="confirmBtn" href="http://d1047.raptors.co.kr/login">계속하기</a>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <script>
-            const first = document.querySelector('#stepFirst')
-            const step1 = document.querySelector('#step1-tab')
-            const step2 = document.querySelector('#step2-tab')
-            const step3 = document.querySelector('#step3-tab')
-            const step4 = document.querySelector('#step4-tab')
-            const next1 = document.querySelector('#nextBtn1')
-            const next2 = document.querySelector('#nextBtn2')
-            const next3 = document.querySelector('#nextBtn3')
-            first.addEventListener('click', () => step1.click());
-            next1.addEventListener('click', () => step2.click());
-            next2.addEventListener('click', () => step3.click());
-            next3.addEventListener('click', () => step4.click());
-        </script>
+        
     </div>
 
 
+    <!-- Modal -->
+    <div class="modal fade gotoLogin" id="jump" tabindex="-1" data-bs-backdrop="static" aria-labelledby="jumpLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="jumpLabel">
+                로그인 후 이어서 <br>
+                현장 등록을 완료할 수 있습니다.
+            </h1>
+            <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+            </div>
+            <div class="modal-body">
+                계속 진행하기 위해서 로그인/회원가입이 필요합니다. <br>
+                로그인 후 진행해주세요.
+            </div>
+            <div class="modal-footer between">
+            <a type="button" class="cancelBtn" href="javascript:history.back()">뒤로가기</a>
+            <a type="button" class="confirmBtn" href="http://d1047.raptors.co.kr/login">로그인</a>
+            </div>
+        </div>
+        </div>
+    </div>
 
+    <script>
+        const first = document.querySelector('#stepFirst')
+        const step1 = document.querySelector('#step1-tab')
+        const step2 = document.querySelector('#step2-tab')
+        const step3 = document.querySelector('#step3-tab')
+        const step4 = document.querySelector('#step4-tab')
+        const next1 = document.querySelector('#nextBtn1')
+        const next2 = document.querySelector('#nextBtn2')
+        const next3 = document.querySelector('#nextBtn3')
+        const next4 = document.querySelector('#nextBtn4')
+        first.addEventListener('click', () => step1.click());
+        next1.addEventListener('click', () => step2.click());
+        next2.addEventListener('click', () => step3.click());
+        next3.addEventListener('click', () => step4.click());
+
+        // 로그인 안했을때는 아래 모달로 막아주세요
+        // 로그인 했을때는 아래 모달없이 진행
+        window.onload=function(){
+            next4.click()
+        }
+    </script>
 
     
 

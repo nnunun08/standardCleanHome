@@ -1018,6 +1018,9 @@ h2 {
   line-height: 150%; /* 24px */
   letter-spacing: -0.32px;
 }
+.section--service .nav {
+  gap: 8px;
+}
 .section--service .nav-link {
   width: 152px;
   display: flex;
@@ -1027,7 +1030,7 @@ h2 {
   padding: 12px 16px;
   gap: 8px;
   box-sizing: border-box;
-  color: var(--greyScale-grey5, #686E7A);
+  color: #4E505D;
   font-family: Pretendard;
   font-size: 13px;
   font-style: normal;
@@ -1035,49 +1038,52 @@ h2 {
   line-height: 100%; /* 13px */
   letter-spacing: -0.39px;
   text-align: left;
+  box-sizing: border-box;
+  border: 1px solid #222;
+  border-radius: 4px;
 }
 .section--service .nav-link.active {
-  background-color: transparent;
   color: var(--greyScale-grey6, #434850);
 }
 .section--service .nav-link.active .pageName {
-  border-bottom-color: #1F79FF;
+  color: #1F79FF;
+  color: #fff;
 }
 .section--service .nav-link.active:nth-child(1) i {
-  background: url(../img/ic_dashboard_ac.svg);
+  background: url(../img/ic_dashboard_w.svg);
 }
 .section--service .nav-link.active:nth-child(2) i {
-  background: url(../img/ic_schedule_ac.svg);
+  background: url(../img/ic_community_w.svg);
 }
 .section--service .nav-link.active:nth-child(3) i {
-  background: url(../img/ic_community_ac.svg);
+  background: url(../img/ic_schedule_w.svg);
 }
 .section--service .nav-link.active:nth-child(4) i {
-  background: url(../img/ic_construction_ac.svg);
+  background: url(../img/ic_construction_w.svg);
 }
 .section--service .nav-link.active:nth-child(5) i {
-  background: url(../img/ic_invoice_ac.svg);
+  background: url(../img/ic_invoice_w.svg);
 }
 .section--service .nav-link.active:nth-child(6) i {
-  background: url(../img/ic_payment_ac.svg);
+  background: url(../img/ic_payment_w.svg);
 }
 .section--service .nav-link.active:nth-child(7) i {
-  background: url(../img/ic_employee_ac.svg);
+  background: url(../img/ic_employee_w.svg);
 }
 .section--service .nav-link.active:nth-child(8) i {
-  background: url(../img/ic_customer_ac.svg);
+  background: url(../img/ic_pricing_w.svg);
 }
 .section--service .nav-link.active:nth-child(9) i {
-  background: url(../img/ic_pricing_ac.svg);
+  background: url(../img/ic_documents_w.svg);
 }
 .section--service .nav-link.active:nth-child(10) i {
-  background: url(../img/ic_documents_ac.svg);
+  background: url(../img/ic_documents_w.svg);
 }
 .section--service .nav-link.active:nth-child(11) i {
-  background: url(../img/ic_setting_ac.svg);
+  background: url(../img/ic_setting_w.svg);
 }
 .section--service .nav-link.active:nth-child(12) i {
-  background: url(../img/ic_info_ac.svg);
+  background: url(../img/ic_info_w.svg);
 }
 .section--service .nav-link i {
   width: 20px;
@@ -1091,10 +1097,10 @@ h2 {
   background: url(../img/ic_dashboard_df.svg);
 }
 .section--service .nav-link:nth-child(2) i {
-  background: url(../img/ic_schedule_df.svg);
+  background: url(../img/ic_community_df.svg);
 }
 .section--service .nav-link:nth-child(3) i {
-  background: url(../img/ic_community_df.svg);
+  background: url(../img/ic_schedule_df.svg);
 }
 .section--service .nav-link:nth-child(4) i {
   background: url(../img/ic_construction_df.svg);
@@ -1109,10 +1115,10 @@ h2 {
   background: url(../img/ic_employee_df.svg);
 }
 .section--service .nav-link:nth-child(8) i {
-  background: url(../img/ic_customer_df.svg);
+  background: url(../img/ic_pricing_df.svg);
 }
 .section--service .nav-link:nth-child(9) i {
-  background: url(../img/ic_pricing_df.svg);
+  background: url(../img/ic_documents_df.svg);
 }
 .section--service .nav-link:nth-child(10) i {
   background: url(../img/ic_documents_df.svg);
@@ -1130,6 +1136,10 @@ h2 {
   .section--service .nav {
     flex-direction: row !important;
     justify-content: center;
+    margin: 0 auto;
+  }
+  .section--service .nav .nav-link {
+    width: auto;
   }
 }
 @media screen and (max-width: 768px) {
@@ -3159,6 +3169,32 @@ footer .info .copyright {
   }
 }
 
+.selfEstimate .gridTit {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 0;
+}
+.selfEstimate .gridTit select {
+  background: url(../img/ic_select2_arr.svg) right 10px center no-repeat;
+  padding-right: 34px;
+}
+.selfEstimate .gridTit .flex {
+  display: flex;
+  gap: 4px;
+}
+.selfEstimate .gridTit input,
+.selfEstimate .gridTit select,
+.selfEstimate .gridTit button {
+  max-width: 360px;
+  height: 36px;
+  box-sizing: border-box;
+  padding-top: 0;
+  padding-bottom: 0;
+  width: auto;
+  flex: 0 0 auto;
+}
+
 .selfEstimate .estimateBox .tray {
   height: 800px;
 }
@@ -3667,7 +3703,7 @@ footer .info .copyright {
 
 .gotoLogin .modal-content {
   border-radius: 0;
-  padding: 40px;
+  padding: 40px 16px 16px;
 }
 .gotoLogin .modal-footer,
 .gotoLogin .modal-body,
@@ -3703,12 +3739,37 @@ footer .info .copyright {
 .gotoLogin .modal-footer {
   margin-top: 40px;
 }
+.gotoLogin .modal-footer.between {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
 .gotoLogin .confirmBtn {
   display: flex;
   align-items: center;
   justify-content: center;
   background: #E9F2FE;
   color: #1F79FF;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 24px */
+  letter-spacing: -0.32px;
+  border-radius: 0;
+  height: 52px;
+  padding: 0 10px;
+  width: 100%;
+  border: 0;
+}
+.gotoLogin .cancelBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  color: #999;
   text-align: center;
   font-family: Pretendard;
   font-size: 16px;
