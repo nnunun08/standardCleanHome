@@ -1302,6 +1302,9 @@ h2 {
 			.tableRow {
 				display: flex;
 				border-bottom: 1px solid #D7D9DD;
+				.normal {
+					display: block;
+				}
 				.point1 {
 					color: #1F79FF;
 				}
@@ -1562,6 +1565,10 @@ h2 {
 		align-items: center;
 		justify-content: center;
 		gap: 10px;
+		transition: 0.2s;
+		&:hover {
+			background: #2074FF;
+		}
 		&.active {
 			background: #2074FF;
 		}
@@ -3438,6 +3445,7 @@ footer {
 			padding-bottom: 0;
 			width: auto;
 			flex: 0 0 auto;
+			white-space: nowrap;
 		}
 	}
 }
@@ -3571,10 +3579,14 @@ footer {
 		.inner {
 			padding: 0;
 		}
+		.gridTit {
+			padding: 0 20px;
+		}
 		.estimateBox {
 			.left {
 				padding: 0 10px;
 				padding-right: 0;
+				padding-bottom: 30px;
 				.tray {
 					box-shadow: none;
 				}
@@ -3606,9 +3618,9 @@ footer {
 			.right {
 				// display: none;
 				// box-shadow: 0px 4px 32px 0px var(--boxShadow);
-				padding: 20px;
+				padding: 10px;
 				// background: rgb(244 244 244 / 80%);
-				background: rgb(245 245 247 / 80%);
+				background: rgb(245 245 247 / 30%);
 				backdrop-filter: blur(10px);
 				// border-radius: 16px;
 				position: fixed;
@@ -3677,6 +3689,21 @@ footer {
 							transform: rotate(90deg);
 						}
 					}	
+				}
+
+				.total {
+					padding: 8px 0;
+					gap: 6px;
+					.totalList {
+						.key,
+						.value {
+							font-size: 12px;
+							font-weight: 500;
+						}
+					}
+					.totalResult .value {
+						font-size: 16px;
+					}
 				}
 			}
 		}
@@ -4000,8 +4027,8 @@ footer {
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		background: #E9F2FE;
-		color: #1F79FF;
+		background: #ECD146;
+		color: rgba(0,0,0,0.9);
 		text-align: center;
 		font-family: Pretendard;
 		font-size: 16px;

@@ -927,6 +927,9 @@ h2 {
   display: flex;
   border-bottom: 1px solid #D7D9DD;
 }
+.section--price .priceTable .priceGroup .tableRow .normal {
+  display: block;
+}
 .section--price .priceTable .priceGroup .tableRow .point1 {
   color: #1F79FF;
 }
@@ -1207,6 +1210,10 @@ h2 {
   align-items: center;
   justify-content: center;
   gap: 10px;
+  transition: 0.2s;
+}
+.section--flow .nav-link:hover {
+  background: #2074FF;
 }
 .section--flow .nav-link.active {
   background: #2074FF;
@@ -3193,6 +3200,7 @@ footer .info .copyright {
   padding-bottom: 0;
   width: auto;
   flex: 0 0 auto;
+  white-space: nowrap;
 }
 
 .selfEstimate .estimateBox .tray {
@@ -3308,9 +3316,13 @@ footer .info .copyright {
   .section--estimate .inner, .section--estimate .inner-full {
     padding: 0;
   }
+  .section--estimate .gridTit {
+    padding: 0 20px;
+  }
   .section--estimate .estimateBox .left {
     padding: 0 10px;
     padding-right: 0;
+    padding-bottom: 30px;
   }
   .section--estimate .estimateBox .left .tray {
     box-shadow: none;
@@ -3336,8 +3348,8 @@ footer .info .copyright {
     color: var(--primary);
   }
   .section--estimate .estimateBox .right {
-    padding: 20px;
-    background: rgba(245, 245, 247, 0.8);
+    padding: 10px;
+    background: rgba(245, 245, 247, 0.3);
     -webkit-backdrop-filter: blur(10px);
             backdrop-filter: blur(10px);
     position: fixed;
@@ -3395,6 +3407,18 @@ footer .info .copyright {
   }
   .section--estimate .estimateBox .right.ac .detailList svg {
     transform: rotate(90deg);
+  }
+  .section--estimate .estimateBox .right .total {
+    padding: 8px 0;
+    gap: 6px;
+  }
+  .section--estimate .estimateBox .right .total .totalList .key,
+  .section--estimate .estimateBox .right .total .totalList .value {
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .section--estimate .estimateBox .right .total .totalResult .value {
+    font-size: 16px;
   }
 }
 
@@ -3749,8 +3773,8 @@ footer .info .copyright {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #E9F2FE;
-  color: #1F79FF;
+  background: #ECD146;
+  color: rgba(0, 0, 0, 0.9);
   text-align: center;
   font-family: Pretendard;
   font-size: 16px;
